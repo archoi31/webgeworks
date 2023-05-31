@@ -1,0 +1,19 @@
+@charset "UTF-8";/*========================================================
+ Layout
+========================================================*/
+
+.wrap { position:relative; margin: auto; background-color: #fff; } 
+
+/* Layout : Header ---------------------------------------- */
+header { display:flex; justify-content:space-between; align-items: center; height:72px; width:100%; padding:0 32px; border-bottom:1px solid #EEEEEE; z-index:9999; } 
+.head-logo img { height: 32px; width: auto; } 
+.gnb ul { display: flex; gap : 32px; font-weight: bold; align-items: center; } 
+.gnb ul .cart{ position: relative;}
+.gnb ul .cart .number { display: inline-block; position: absolute; top:-8px; right:-8px; width:18px; height:18px; border-radius: 18px; background-color:#D2202F; color:#fff; font-size: 12px; font-weight: bold;line-height: 16px; text-align: center; } 
+
+
+/* Layout : Content ---------------------------------------- */
+.container { padding: 32px 0; } 
+
+
+

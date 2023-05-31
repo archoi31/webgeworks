@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/*========================================================
+ CUSTOM WEDGEWORKS
+========================================================*/
+.prd-info{
+    display: flex;
+    justify-content: space-between;
+    padding:0 32px 24px 32px;
+    border-bottom:1px solid #ddd ;
+}
+.prd-info .name p{
+    padding-top:4px;
+    color:#5B5E63;
+}
+.select-wedge{
+    display: flex;
+    gap:24px;
+    padding:32px;
+    
+}
+.select-wedge button{
+    flex:1;
+    padding:24px;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 0px 24px 0px #272A2D1A;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.select-wedge button p{
+    padding-top:16px;
+}
+.ico-select-hand{width:24px;height:24px;background:url('../images/ico-select-hand.svg') no-repeat;background-size:contain;}
+.ico-select-loft{width:24px;height:24px;background:url('../images/ico-select-loft.svg') no-repeat;background-size:contain;}
+.ico-select-finish{width:24px;height:24px;background:url('../images/ico-select-finish.svg') no-repeat;background-size:contain;}
+
+.select-wedge button:disabled{
+    background-color: #F8F8F9;
+    box-shadow: none;
+    color:#aaa;
+}
+.select-wedge button:disabled i{
+    opacity: 0.3;
+}
+.prd-thumbs{
+    padding: 0 32px;
+}
+.prd-thumbs .swiper-main{
+    overflow: hidden;
+    width:100%;
+    height: 740px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border-radius: 40px;
+}
+.prd-thumbs .swiper-thum .swiper-slide{
+    overflow: hidden;
+    border-radius: 8px;
+}
+.prd-thumbs .swiper-thum .swiper-slide.swiper-slide-thumb-active{
+    border:3px solid #D2202F;
+}
+.btn-area{
+    padding: 40px 48px 0;
+    text-align: right;
+}
