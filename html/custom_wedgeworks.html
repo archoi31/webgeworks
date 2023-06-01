@@ -52,15 +52,15 @@
 		</div>
 			
 		<div class="select-wedge">
-			<button type="button" >
+			<button type="button" class="btn-open-orientation">
 				<i class="ico- ico-select-hand"></i>
 				<p>SELECT ORIENTATION</p>
 			</button>
-			<button type="button" disabled>
+			<button type="button" disabled class="btn-open-loft">
 				<i class="ico- ico-select-loft"></i>
 				<p>SELECT LOFT</p>
 			</button>
-			<button type="button" disabled>
+			<button type="button" disabled class="btn-open-finish">
 				<i class="ico- ico-select-finish"></i>
 				<p>SELECT FINISH</p>
 			</button>
@@ -104,7 +104,7 @@
 		<!--prd-thumbs-->
 		
 		<div class="btn-area">
-			<button class="btn btn-primary-slant" disabled>
+			<button class="btn btn-primary-slant btn-start-custom" disabled>
 				<p>START CUSTOMIZING</p>  
 			</button>
 		</div>
@@ -112,5 +112,251 @@
 	</section>
 	<!--// ========== 컨텐츠 영역 :: container ========== -->
 </div><!--// wrap -->
+
+<div class="layer-wrap" id="popup-orientation" tabindex="0">
+	<div class="layer-pop">
+		<div class="layer-inner layer-md">
+			<div class="layer-head">
+				<h1 class="layer-title">Select Orientation</h1>
+			</div><!--// layer-head  -->
+			<div class="layer-body">
+				<div class="layer-content">
+					<fieldset class="custom-rdo-field">
+						<input type="radio" name="orientation" value="RIGHT HAND" id="rh" checked />
+						<label for="rh">
+							<i class="ico- ico-check-complete"></i>
+							RIGHT HAND
+						</label>
+					  
+						<input type="radio" name="orientation" value="LEFT HAND" id="lh"/>
+						<label for="lh">
+							<i class="ico- ico-check-complete"></i>
+							LEFT HAND
+						</label>
+					  </fieldset>
+				</div><!--// layer-content -->
+			</div><!--// layer-body  -->
+			<div class="layer-footer">
+				<button class="btn btn-pop-close">DONE</button>
+			</div>
+		</div>
+	</div><!--// layer-pop  -->
+</div>
+
+<div class="layer-wrap" id="popup-loft" tabindex="0">
+	<div class="layer-pop">
+		<div class="layer-inner layer-lg">
+			<div class="layer-head">
+				<h1 class="layer-title">Select Loft</h1>
+			</div><!--// layer-head  -->
+			<div class="layer-body">
+				<div class="layer-content">
+					<fieldset class="custom-rdo-field">
+						<input type="radio" name="loft" value="46.10F" id="46.10F" checked />
+						<label for="46.10F">
+							<i class="ico- ico-check-complete"></i>
+							46.10F
+						</label>
+					  
+						<input type="radio" name="loft" value="48.10F" id="48.10F"/>
+						<label for="48.10F">
+							<i class="ico- ico-check-complete"></i>
+							48.10F 
+						</label>
+
+						<input type="radio" name="loft" value="50.08F" id="50.08F"/>
+						<label for="50.08F">
+							<i class="ico- ico-check-complete"></i>
+							50.08F 
+						</label>
+						
+						<input type="radio" name="loft" value="50.12F" id="50.12F"/>
+						<label for="50.12F">
+							<i class="ico- ico-check-complete"></i>
+							50.12F 
+						</label>
+						
+						<input type="radio" name="loft" value="52.08F" id="52.08F"/>
+						<label for="52.08F">
+							<i class="ico- ico-check-complete"></i>
+							52.08F 
+						</label>
+						
+						<input type="radio" name="loft" value="54.10F" id="54.10F"/>
+						<label for="54.10F">
+							<i class="ico- ico-check-complete"></i>
+							54.10F 
+						</label>
+					</fieldset>
+				</div><!--// layer-content -->
+			</div><!--// layer-body  -->
+			<div class="layer-footer">
+				<button class="btn btn-pop-close">DONE</button>
+			</div>
+		</div>
+	</div><!--// layer-pop  -->
+</div>
+
+<div class="layer-wrap" id="popup-finish" tabindex="0">
+	<div class="layer-pop">
+		<div class="layer-inner layer-lg">
+			<div class="layer-head">
+				<h1 class="layer-title">Select Finish</h1>
+			</div><!--// layer-head  -->
+			<div class="layer-body">
+				<div class="layer-content">
+					<fieldset class="custom-rdo-field">
+						<input type="radio" name="finish" value="Brushed Steel" id="brushedSteel" checked />
+						<label for="brushedSteel">
+							<i class="ico- ico-check-complete"></i>
+							Brushed Steel
+						</label>
+					  
+						<input type="radio" name="finish" value="Jet Black" id="jetBlack"/>
+						<label for="jetBlack">
+							<i class="ico- ico-check-complete"></i>
+							Jet Black
+						</label>
+
+						<input type="radio" name="finish" value="Jet Black Premium" id="jetBlackPremium"/>
+						<label for="jetBlackPremium">
+							<i class="ico- ico-check-complete"></i>
+							Jet Black Premium
+						</label>
+						
+						<input type="radio" name="finish" value="Raw" id="raw"/>
+						<label for="raw">
+							<i class="ico- ico-check-complete"></i>
+							Raw
+						</label>
+
+						<input type="radio" name="finish" value="Tour Chrome" id="tourChrome"/>
+						<label for="tourChrome">
+							<i class="ico- ico-check-complete"></i>
+							Tour Chrome
+						</label>
+					</fieldset>
+				</div><!--// layer-content -->
+			</div><!--// layer-body  -->
+			<div class="layer-footer">
+				<button class="btn btn-pop-close">DONE</button>
+			</div>
+		</div>
+	</div><!--// layer-pop  -->
+</div>
+
+<!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
+<script>
+    $(function () {
+
+        //select orientation open
+        $('.btn-open-orientation').click(function(){
+			
+			if ($('#popup-orientation').css('display') == 'block') {
+				$('#popup-orientation').css('display', 'none');
+			} else {
+				$('#popup-orientation').css('display', 'block');
+			}
+		}) 
+
+        //select orientation close
+        $('#popup-orientation .btn-pop-close').click(function(){
+			
+			//선택 값 저장 가져오기
+			var checkedValue = $('input[name="orientation"]:checked').val();
+			
+			//팝업 닫기
+			$('#popup-orientation').css('display', 'none');
+
+			//선택 값 버튼에 넣기
+			$('.btn-open-orientation p').text(checkedValue);
+			
+			//버튼의 아이콘 변경
+			$('.btn-open-orientation i').removeClass("ico-select-hand");
+			$('.btn-open-orientation i').addClass("ico-check-complete");
+
+			//버튼 선택완료 스타일로 변경
+			$('.btn-open-orientation').addClass("select-complete");
+
+
+			//다른 버튼 활성화
+			$('.select-wedge button').attr("disabled", false);
+
+			
+		}) 
+		
+		
+       //select loft open
+	   $('.btn-open-loft').click(function(){
+			
+			if ($('#popup-loft').css('display') == 'block') {
+				$('#popup-loft').css('display', 'none');
+			} else {
+				$('#popup-loft').css('display', 'block');
+			}
+		}) 
+
+		//select loft close
+        $('#popup-loft .btn-pop-close').click(function(){
+			//선택 값 저장 가져오기
+			var checkedValue = $('input[name="loft"]:checked').val();
+			
+			//팝업 닫기
+			$('#popup-loft').css('display', 'none');
+
+			//선택 값 버튼에 넣기
+			$('.btn-open-loft p').text(checkedValue);
+			
+			//버튼의 아이콘 변경
+			$('.btn-open-loft i').removeClass("ico-select-loft");
+			$('.btn-open-loft i').addClass("ico-check-complete");
+
+			//버튼 선택완료 스타일로 변경
+			$('.btn-open-loft').addClass("select-complete");
+			
+		}) 
+
+       //select finish open
+	   $('.btn-open-finish').click(function(){
+			
+			if ($('#popup-finish').css('display') == 'block') {
+				$('#popup-finish').css('display', 'none');
+			} else {
+				$('#popup-finish').css('display', 'block');
+			}
+		}) 
+
+		//select finish close
+        $('#popup-finish .btn-pop-close').click(function(){
+			
+			var checkedValue = $('input[name="finish"]:checked').val();
+			
+			$('#popup-finish').css('display', 'none');
+
+			$('.btn-open-finish p').text(checkedValue);
+			
+			
+			$('.btn-open-finish i').removeClass("ico-select-finish");
+			$('.btn-open-finish i').addClass("ico-check-complete");
+
+			$('.btn-open-finish').addClass("select-complete");
+			
+		}) 
+
+		$('.btn-pop-close').click(function(){
+			var boolOrientation = $('.btn-open-orientation').hasClass("select-complete")
+			var boolLoft = $('.btn-open-loft').hasClass("select-complete")
+			var boolFinish = $('.btn-open-finish').hasClass("select-complete")
+			
+			if(boolOrientation && boolLoft && boolFinish){
+				$('.btn-start-custom').attr("disabled", false);
+			}			
+
+		}) 
+		
+       
+   }); 
+</script>
+<!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 </body>
 </html>

@@ -27,11 +27,15 @@
     background-color: #fff;
     box-shadow: 0px 0px 24px 0px #272A2D1A;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 
 }
 .select-wedge button p{
     padding-top:16px;
+}
+.select-wedge button.select-complete{
+    background-color: #F6F6F9;
+    box-shadow: none;
 }
 .ico-select-hand{width:24px;height:24px;background:url('../images/ico-select-hand.svg') no-repeat;background-size:contain;}
 .ico-select-loft{width:24px;height:24px;background:url('../images/ico-select-loft.svg') no-repeat;background-size:contain;}
@@ -66,4 +70,49 @@
 .btn-area{
     padding: 40px 48px 0;
     text-align: right;
+}
+
+.custom-rdo-field{
+    display: flex;
+    gap:24px;
+    flex-wrap: wrap;
+}
+.custom-rdo-field label {
+    display: flex;
+    gap:8px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px 0;
+    text-align: center;
+    color:#5B5E63;
+}
+
+.custom-rdo-field [type="radio"]+label .ico-check-complete{
+    display: none;
+}
+.custom-rdo-field [type="radio"] {
+    display: none;
+}
+.custom-rdo-field [type="radio"]:checked+label{
+    border-width: 2px;
+    border-color: #D2202F;
+    font-weight: bold;
+    color:#272A2D;
+}
+
+.custom-rdo-field [type="radio"]:checked+label .ico-check-complete{
+    display: inline-block;
+}
+
+#popup-orientation .custom-rdo-field label{
+    width: calc(50% - 12px);
+}
+#popup-loft .custom-rdo-field label{
+    width: calc(25% - 18px);
+}
+#popup-finish .custom-rdo-field label{
+    width: 100%;
 }
