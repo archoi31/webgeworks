@@ -2,11 +2,14 @@
 <html lang="ko" xml:lang="ko">
 <head>
 <meta charset="utf-8">
-<!-- include js 
-	 상세 html 마크업 가이드 : html/_layout/layout_guide.html 참조
--->
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ======================== FAVICON ======================== -->
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<!--// ======================== FAVICON ======================== -->
 
 <!-- ======================== CSS / JS ======================== -->
 <link rel="stylesheet" href="../css/global.css" type="text/css" />
@@ -32,7 +35,7 @@
 				<li><a href="../html/custom_webgeworks.html"> WEDGEWORKS</a></li>
 				<li><a href="#">BALL</a></li>
 				<li><i class="ico- ico-user"></i></li>
-				<l class="cart"><i class="ico- ico-cart"></i><sapn class="number">2</sapn></l>
+				<li class="cart"><i class="ico- ico-cart"></i><span class="number">2</span></li>
 			</ul>
 		</nav>
 	</header>
@@ -347,7 +350,7 @@
 			var boolOrientation = $('.btn-open-orientation').hasClass("select-complete")
 			var boolLoft = $('.btn-open-loft').hasClass("select-complete")
 			var boolFinish = $('.btn-open-finish').hasClass("select-complete")
-			
+
 			if(boolOrientation && boolLoft && boolFinish){
 				$('.btn-start-custom').attr("disabled", false);
 			}			

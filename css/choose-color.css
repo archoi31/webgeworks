@@ -1,0 +1,93 @@
+:root {
+  --co-primaryColor: #1976D2;
+}
+
+.co-color-list {
+  position: absolute;
+  background: white;
+  border-radius: 8px;
+  border:1px solid #ddd;
+  padding:24px;
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+.co-color-list h1{
+  padding-bottom: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #272A2D;
+}
+
+
+.co-color-list--bellow::before {
+  top: -10px;
+  border-bottom: 10px solid white;
+}
+
+.co-color-list--above::before {
+  bottom: -10px;
+  border-top: 10px solid white;
+}
+
+.co-color-list--left::before {
+  left: 23px;
+}
+
+.co-color-list--right::before {
+  right: 23px;
+}
+
+.co-color-list .color-pallet {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  transition: all 450ms;
+  padding: 0;
+}
+
+.co-color-list .color-pallet li {
+  border: 1px solid #ddd;
+  display: inline-block;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.co-color-list ul.color-reset {
+  padding: 0;
+}
+
+.co-color-list ul.color-reset li {
+  width: 100%;
+  height: inherit;
+  padding: 0;
+}
+
+.co-shadow-3dp {
+  box-shadow: 0px 0px 24px 0px #0000001F;
+}
+
+.co-button-flat {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  font-size: 14px;
+  border-radius: 2px;
+  color: var(--co-primaryColor);
+  background: transparent;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 400ms;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.co-width-100-percentage {
+  width: 100%;
+}
+
+.co-font-color-black-54 {
+  color: rgba(0, 0, 0, .54);
+}

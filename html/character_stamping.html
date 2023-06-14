@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta charset="utf-8">
+<!-- include js 
+	 상세 html 마크업 가이드 : html/_layout/layout_guide.html 참조
+-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ======================== FAVICON ======================== -->
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<!--// ======================== FAVICON ======================== -->
+
+<!-- ======================== CSS / JS ======================== -->
+<link rel="stylesheet" href="../css/global.css" type="text/css" />
+<link rel="stylesheet" href="../css/layout.css" type="text/css" />
+<link rel="stylesheet" href="../css/content.css" type="text/css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" type="text/css" />
+<link rel="stylesheet" href="../css/choose-color.css" />
+
+<script src="../js/lib/jquery-3.6.4.min.js"></script>
+<script src="../js/lib/jquery-ui-1.13.2.min.js"></script>
+<script src="../js/content_ui.js"></script>
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+<script src="../js/lib/choose-color.js"></script>
+
+<!--// ======================== CSS / JS ======================== -->
+<title>WEDGEWORKS</title>
+</head>  
+
+<body>
+<div class="wrap">
+	<!-- ========== 공통 헤더 :: header ========== -->
+	<header class="simple-hdr">
+		<a hef="./custom_webgeworks.html"><i class="ico- ico-prev"></i></a>
+		<nav class="gnb">
+			<ul>
+				<li class="cart"><i class="ico- ico-cart"></i><sapn class="number">2</sapn></li>
+			</ul>
+		</nav>
+	</header>
+	<!--// ========== 공통 헤더 :: header ========== -->
+
+	<!-- ========== 컨텐츠 영역 :: container ========== -->
+	<section id="contents" class="container">
+		
+		<div class="area-prd-image">
+			<div class="prd-name">
+				<p>SM9 48.10 F</p>
+				<p>Jet Black</p>
+				<p>RH</p>
+			</div>
+			<img src="../images/jetblack_rh.png">
+		</div>
+
+		<div class="tab-menu custom-tab">
+			<ul>
+				<li class="current" >
+					<a href="./character_stamping.html">CHARACTER STAMPING</a> 
+				</li>
+				<li>
+					<a href="./color_options.html">COLOR OPTIONS</a>
+				</li>
+				<li>
+					<a href="./toe_engraving.html">TOE ENGRAVING</a>
+				</li>
+				<li>
+					<a href="./flight_line.html">FLIGHT LINE</a>
+				</li>
+				<li>
+					<a href="./ferrule.html">FERRULE</a>
+				</li>
+				<li>
+					<a href="./shaft_band.html">SHAFT BAND</a>
+				</li>
+				<li>
+					<a href="./shaft.html">SHAFT</a>
+				</li>
+				<li>
+					<a href="/grip.html">GRIP</a>
+				</li>
+				<li>
+					<a href="./shaft_laser_etching.html">SAFT LASER ETCHING</a>
+				</li>
+				<li>
+					<a href="./specification.html">SPECIFICATION</a>
+				</li>
+				<li>
+					<a href="./comments.html">COMMENTS</a>
+				</li>
+			</ul>
+		</div>
+			
+		<article class="cont-wrap">
+			<button class="btn btn-refresh">
+				Refresh
+				<i class="ico- ico-refresh"></i>
+			</button>
+
+			<div class="custom-wrap">
+				<h2>STAMPING STLYLE</h2>
+				<button class="btn btn-open-stamping">
+					<p>Select Stamping Style</p>
+					<i class="ico ico-arrow-down"></i>
+				</button>
+			</div>
+			
+			<div class="custom-wrap">
+				<h2>CHARACTERS(ENTER UP TO 10) 
+					<span class="info-txt"> 
+						<i class="ico ico-info"></i> 사용가능 문자
+						<div class="info-pop">
+							A B C D E F G H I J K L M N<br>
+							O P Q R S T U V W X Y Z<br>
+							0 1 2 3 4 5 6 7 8 9 0<Br>
+							# * @ + $ & - .
+						</div>
+					</span>
+					
+				</h2>
+				
+				<div class="input-group mb24">
+					<label class="input-group-label">First Line</label>
+					<input type="text" placeholder="Please Enter A Characters" class="w60p">
+					<button class="btn btn-gray" id="chooseColor">
+						<div class="color-picker-wrap">
+							<div class="colorDisplay"></div>
+							<input class="colorValue" type="hidden" name="" >
+							<p class="colorName">White Out</p>
+						</div>
+						<i class="ico ico-arrow-down"></i>
+					</button>
+				</div>
+				<div class="input-group">
+					<label class="input-group-label">Second Line</label>
+					<input type="text" placeholder="Please Enter A Characters" class="w60p">
+					<button class="btn btn-gray" id="chooseColor2">
+						<div class="color-picker-wrap">
+							<div class="colorDisplay"></div>
+							<input class="colorValue" type="hidden" name="" >
+							<p class="colorName">White Out</p>
+						</div>
+						<i class="ico ico-arrow-down"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="custom-wrap">
+				<h2>SYMBOLS</h2>
+				<fieldset class="symbols">
+					<input type="radio" id="ctl00" name="stamp-symbol" value="dot">
+					<label for="ctl00">
+						<img src="../images/snow-effect/dot-swatch.png" alt="dot-swatch">
+					</label>
+
+					<input type="radio" id="ctl01" name="stamp-symbol" value="bv">
+					<label for="ctl01">
+						<img src="../images/snow-effect/bv-swatch.png" alt="bv-swatch">
+					</label>
+
+					<input type="radio" id="ctl02" name="stamp-symbol" value="hammer">
+					<label for="ctl02">
+						<img src="../images/snow-effect/hammer-swatch.png" alt="hammer-swatch">
+					</label>
+
+					<input type="radio" id="ctl03" name="stamp-symbol" value="face">
+					<label for="ctl03">
+						<img src="../images/snow-effect/face-swatch.png" alt="face-swatch">
+					</label>
+
+					<input type="radio" id="ctl04" name="stamp-symbol" value="saw">
+					<label for="ctl04">
+						<img src="../images/snow-effect/saw-swatch.png" alt="saw-swatch">
+					</label>
+
+					<input type="radio" id="ctl05" name="stamp-symbol" value="star">
+					<label for="ctl05">
+						<img src="../images/snow-effect/star-swatch.png" alt="star-swatch">
+					</label>
+
+					<input type="radio" id="ctl06" name="stamp-symbol" value="clover">
+					<label for="ctl06">
+						<img src="../images/snow-effect/clover-swatch.png" alt="clover-swatch">
+					</label>
+
+					<input type="radio" id="ctl07" name="stamp-symbol" value="heart">
+					<label for="ctl07">
+						<img src="../images/snow-effect/heart-swatch.png" alt="heart-swatch">
+					</label>
+
+					<input type="radio" id="ctl08" name="stamp-symbol" value="skull">
+					<label for="ctl08">
+						<img src="../images/snow-effect/skull-swatch.png" alt="skull-swatch">
+					</label>
+
+					<input type="radio" id="ctl09" name="stamp-symbol" value="foot">
+					<label for="ctl09">
+						<img src="../images/snow-effect/foot-swatch.png" alt="foot-swatch">
+					</label>
+
+					<input type="radio" id="ctl10" name="stamp-symbol" value="diamond">
+					<label for="ctl10">
+						<img src="../images/snow-effect/diamond-swatch.png" alt="diamond-swatch">
+					</label>	
+				</fieldset>
+				<button class="btn btn-gray mt16" id="chooseColor3" >
+					<div class="color-picker-wrap">
+						<div class="colorDisplay"></div>
+						<input class="colorValue" type="hidden" name="" >
+						<p class="colorName">White Out</p>
+					</div>
+					<i class="ico ico-arrow-down"></i>
+				</button>
+			</div>
+
+
+		</article>
+		
+			<div class="foot-btn">
+				<button class="btn btn-arrow">
+					<i class="ico- ico-prev-arrow"></i>
+					Prev
+				</button>
+				<button class="btn btn-arrow">
+					Next
+					<i class="ico- ico-next-arrow"></i>
+				</button>
+			</div>
+		<article class="submit-wrap">
+			<p>Total Price <b class="price">₩239,000</b> </p>
+			<button class="btn">
+				REVIEW CONFIGURATION
+			</button>
+		</article>
+
+	</section>
+	<!--// ========== 컨텐츠 영역 :: container ========== -->
+</div><!--// wrap -->
+
+<!-- ========== 팝업 영역 :: stamping style ========== -->
+<div class="layer-wrap" id="popup-stamping" tabindex="0">
+	<div class="layer-pop">
+		<div class="layer-inner layer-lg">
+			<div class="layer-head">
+				<h1 class="layer-title">Select Stamping Style</h1>
+			</div><!--// layer-head  -->
+			<div class="layer-body">
+				<div class="layer-content">
+					<fieldset class="custom-rdo-field">
+						<input type="radio" name="stamping" value="Straight Stamping(+ ₩33,000)" id="straight" checked />
+						<label for="straight">
+							Straight Stamping(+ ₩33,000)
+							<i class="ico- ico-check-complete"></i>
+						</label>
+					  
+						<input type="radio" name="stamping" value="Freestyle Stamping(+ ₩33,000)" id="freestyle"/>
+						<label for="freestyle">
+							Freestyle Stamping(+ ₩33,000)
+							<i class="ico- ico-check-complete"></i>
+						</label>
+
+						<input type="radio" name="stamping" value="Staircase Stamping(+ ₩33,000)" id="staircase"/>
+						<label for="staircase">
+							Staircase Stamping(+ ₩33,000)
+							<i class="ico- ico-check-complete"></i>
+						</label>
+						
+						<input type="radio" name="stamping" value="Snow Effect Initials(+ ₩33,000)" id="snowInitials"/>
+						<label for="snowInitials">
+							Snow Effect Initials(+ ₩33,000)
+							<i class="ico- ico-check-complete"></i>
+						</label>
+
+						<input type="radio" name="stamping" value="Snow Effect symbols(+ ₩33,000)" id="snowSymbols"/>
+						<label for="snowSymbols">
+							Snow Effect symbols(+ ₩33,000)
+							<i class="ico- ico-check-complete"></i>
+						</label>
+
+						
+						<input type="radio" name="stamping" value="Two Lines Straights(+ ₩33,000)" id="twoLine"/>
+						<label for="twoLine">
+							Two Lines Straights(+ ₩33,000)
+							<i class="ico- ico-check-complete"></i>
+						</label>
+
+						
+						<input type="radio" name="stamping" value="Curve Stamping(+ ₩33,000)" id="curve"/>
+						<label for="curve">
+							Curve Stamping(+ ₩33,000)
+							<i class="ico- ico-check-complete"></i>
+						</label>
+						
+						<input type="radio" name="stamping" value="No Thanks" id="noThanks"/>
+						<label for="noThanks">
+							No Thanks
+							<i class="ico- ico-check-complete"></i>
+						</label>
+
+					</fieldset>
+				</div><!--// layer-content -->
+			</div><!--// layer-body  -->
+			<div class="layer-footer">
+				<button class="btn btn-pop-close">DONE</button>
+			</div>
+		</div>
+	</div><!--// layer-pop  -->
+</div>
+<!--// ========== 팝업 영역 :: stamping style ========== -->
+
+<!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
+<script>
+    $(function () {
+
+
+		/* ==============================컬러픽커==============================*/
+		$.support.cors = true;
+		const $button1 = $('#chooseColor')
+		const $colorValue1 = $('#chooseColor .colorValue')
+		const $colorDisplay1 = $('#chooseColor .colorDisplay')
+		const $colorName1 = $('#chooseColor .colorName')
+
+
+		const $button2 = $('#chooseColor2')
+		const $colorValue2 = $('#chooseColor2 .colorValue')
+		const $colorDisplay2 = $('#chooseColor2 .colorDisplay')
+		const $colorName2 = $('#chooseColor2 .colorName')
+
+		const $button3 = $('#chooseColor3')
+		const $colorValue3 = $('#chooseColor3 .colorValue')
+		const $colorDisplay3 = $('#chooseColor3 .colorDisplay')
+		const $colorName3 = $('#chooseColor3 .colorName')
+
+		$($button1).sbxColorChoice({
+			selecionarCor: (color, colorName) => {
+				console.log("colorname", colorName)
+				$($colorValue1).val(color)
+				$colorDisplay1.css('background-color', color)
+				$colorName1.text(colorName)
+			},
+		})
+
+		$($button2).sbxColorChoice({
+			selecionarCor: (color, colorName) => {
+				console.log("colorname", colorName)
+				$($colorValue2).val(color)
+				$colorDisplay2.css('background-color', color)
+				$colorName2.text(colorName)
+			},
+		})
+
+		$($button3).sbxColorChoice({
+			selecionarCor: (color, colorName) => {
+				console.log("colorname", colorName)
+				$($colorValue3).val(color)
+				$colorDisplay3.css('background-color', color)
+				$colorName3.text(colorName)
+			},
+		})
+
+
+		
+       /* ============================== 팝업 ============================== */
+	   $('.btn-open-stamping').click(function(){
+			
+			if ($('#popup-stamping').css('display') == 'block') {
+				$('#popup-stamping').css('display', 'none');
+			} else {
+				$('#popup-stamping').css('display', 'block');
+			}
+		}) 
+
+		//select finish close
+        $('#popup-stamping .btn-pop-close').click(function(){
+			
+			var checkedValue = $('input[name="stamping"]:checked').val();
+			
+			$('#popup-stamping').css('display', 'none');
+
+			$('.btn-open-stamping p').text(checkedValue);
+			
+		}) 
+
+		
+       /* ============================== 사용가능문자 ============================== */
+	   $('.info-txt').click(function(){
+			
+			if ($('.info-pop').css('display') == 'block') {
+				$('.info-pop').css('display', 'none');
+			} else {
+				$('.info-pop').css('display', 'block');
+			}
+		}) 
+   }); 
+</script>
+<!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
+</body>
+</html>

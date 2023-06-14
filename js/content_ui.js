@@ -9,6 +9,9 @@ $(function(){
     // Layer popup
     if ($('.ui-open-pop').length > 0) { layerPop();}
 
+    // Cont-wrap
+    if ($('.cont-wrap').length > 0) { contWrapHeight();}
+
 });
 
 
@@ -108,4 +111,22 @@ function layerClose (el, btnTarget) {
     layerWrap.hide();
 
     if(!layerWrap.hasClass('onload')) btnTarget.focus();
+}
+
+//Contwrap 높이
+function contWrapHeight(){
+    var prdImageHieght = $('.area-prd-image').outerHeight(); 
+    var tabHeight =  $('.custom-tab').outerHeight(); 
+    var submitWrapHeight =  $('.submit-wrap').outerHeight(); 
+    var windowHeight = window.innerHeight;
+
+    var contWrapHeight = windowHeight - (prdImageHieght + tabHeight + submitWrapHeight) - 32;
+    
+    console.log(prdImageHieght)
+    console.log(tabHeight)
+    console.log(submitWrapHeight)
+    console.log(windowHeight)
+    console.log(contWrapHeight)
+
+    $('.cont-wrap').css("height",contWrapHeight );
 }

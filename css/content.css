@@ -1,118 +1,63 @@
-@charset "UTF-8";
-
-/*========================================================
+@charset "UTF-8"; /*========================================================
  CUSTOM WEDGEWORKS
 ========================================================*/
-.prd-info{
-    display: flex;
-    justify-content: space-between;
-    padding:0 32px 24px 32px;
-    border-bottom:1px solid #ddd ;
-}
-.prd-info .name p{
-    padding-top:4px;
-    color:#5B5E63;
-}
-.select-wedge{
-    display: flex;
-    gap:24px;
-    padding:32px;
-    
-}
-.select-wedge button{
-    flex:1;
-    padding:24px;
-    border:1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0px 0px 24px 0px #272A2D1A;
-    font-weight: bold;
-    font-size: 20px;
+.prd-info { display: flex; justify-content: space-between; padding:32px 32px 24px 32px; border-bottom:1px solid #ddd; } 
+.prd-info .name p { padding-top:4px; color:#5B5E63; } 
+.select-wedge { display: flex; gap:24px; padding:32px; } 
+.select-wedge button { flex:1; padding:24px; border:1px solid #ddd; border-radius: 8px; background-color: #fff; box-shadow: 0px 0px 24px 0px #272A2D1A; font-weight: bold; font-size: 20px; } 
+.select-wedge button p { padding-top:16px; } 
+.select-wedge button.select-complete { background-color: #F6F6F9; box-shadow: none; } 
+.ico-select-hand { width:24px; height:24px; background:url('../images/ico-select-hand.svg') no-repeat; background-size:contain; } 
+.ico-select-loft { width:24px; height:24px; background:url('../images/ico-select-loft.svg') no-repeat; background-size:contain; } 
+.ico-select-finish { width:24px; height:24px; background:url('../images/ico-select-finish.svg') no-repeat; background-size:contain; } 
 
-}
-.select-wedge button p{
-    padding-top:16px;
-}
-.select-wedge button.select-complete{
-    background-color: #F6F6F9;
-    box-shadow: none;
-}
-.ico-select-hand{width:24px;height:24px;background:url('../images/ico-select-hand.svg') no-repeat;background-size:contain;}
-.ico-select-loft{width:24px;height:24px;background:url('../images/ico-select-loft.svg') no-repeat;background-size:contain;}
-.ico-select-finish{width:24px;height:24px;background:url('../images/ico-select-finish.svg') no-repeat;background-size:contain;}
+.select-wedge button:disabled { background-color: #F8F8F9; box-shadow: none; color:#aaa; } 
+.select-wedge button:disabled i { opacity: 0.3; } 
+.prd-thumbs { padding: 0 32px; } 
+.prd-thumbs .swiper-main { overflow: hidden; width:100%; height: 740px; margin-top: 8px; margin-bottom: 16px; border-radius: 40px; } 
+.prd-thumbs .swiper-thum .swiper-slide { overflow: hidden; border-radius: 8px; } 
+.prd-thumbs .swiper-thum .swiper-slide.swiper-slide-thumb-active { border:3px solid #D2202F; } 
+.btn-area { padding: 40px 48px 0; text-align: right; } 
 
-.select-wedge button:disabled{
-    background-color: #F8F8F9;
-    box-shadow: none;
-    color:#aaa;
-}
-.select-wedge button:disabled i{
-    opacity: 0.3;
-}
-.prd-thumbs{
-    padding: 0 32px;
-}
-.prd-thumbs .swiper-main{
-    overflow: hidden;
-    width:100%;
-    height: 740px;
-    margin-top: 8px;
-    margin-bottom: 16px;
-    border-radius: 40px;
-}
-.prd-thumbs .swiper-thum .swiper-slide{
-    overflow: hidden;
-    border-radius: 8px;
-}
-.prd-thumbs .swiper-thum .swiper-slide.swiper-slide-thumb-active{
-    border:3px solid #D2202F;
-}
-.btn-area{
-    padding: 40px 48px 0;
-    text-align: right;
-}
+.custom-rdo-field { display: flex; gap:24px; flex-wrap: wrap; } 
+.custom-rdo-field label { display: flex; gap:8px; align-items: center; justify-content: center; font-size: 24px; border: 1px solid #ddd; border-radius: 8px; padding: 24px 0; text-align: center; color:#5B5E63; } 
 
-.custom-rdo-field{
-    display: flex;
-    gap:24px;
-    flex-wrap: wrap;
-}
-.custom-rdo-field label {
-    display: flex;
-    gap:8px;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 24px 0;
-    text-align: center;
-    color:#5B5E63;
-}
+.custom-rdo-field [type="radio"]+label .ico-check-complete { display: none; } 
+.custom-rdo-field [type="radio"] { display: none; } 
+.custom-rdo-field [type="radio"]:checked+label { border-width: 2px; border-color: #D2202F; font-weight: bold; color:#272A2D; } 
 
-.custom-rdo-field [type="radio"]+label .ico-check-complete{
-    display: none;
-}
-.custom-rdo-field [type="radio"] {
-    display: none;
-}
-.custom-rdo-field [type="radio"]:checked+label{
-    border-width: 2px;
-    border-color: #D2202F;
-    font-weight: bold;
-    color:#272A2D;
-}
+.custom-rdo-field [type="radio"]:checked+label .ico-check-complete { display: inline-block; } 
 
-.custom-rdo-field [type="radio"]:checked+label .ico-check-complete{
-    display: inline-block;
-}
+#popup-orientation .custom-rdo-field label { width: calc(50% - 12px); } 
+#popup-loft .custom-rdo-field label { width: calc(25% - 18px); } 
+#popup-finish .custom-rdo-field label { width: 100%; } 
 
-#popup-orientation .custom-rdo-field label{
-    width: calc(50% - 12px);
-}
-#popup-loft .custom-rdo-field label{
-    width: calc(25% - 18px);
-}
-#popup-finish .custom-rdo-field label{
-    width: 100%;
-}
+
+/*========================================================
+CUSTOM WEDGEWORKS - COMMON
+========================================================*/ 
+.area-prd-image { position: relative; background: #F8F8F9; } 
+.area-prd-image img { width: 80%; max-width: 800px; } 
+.area-prd-image .prd-name { position: absolute; right:32px; top:80px; text-align: right; font-weight: bold; font-size:32px; color:#D2202F; } 
+.custom-tab ul { overflow-y: hidden; overflow-x: auto; width: 100%; align-items: start; justify-content: start; -ms-overflow-style: none; scrollbar-width: none; } 
+.custom-tab ul::-webkit-scrollbar { display: none; } 
+.custom-tab { padding:16px 0px 16px 16px; border-bottom: 1px solid #ddd; } 
+
+.custom-wrap { padding-top:24px; padding-bottom:40px; } 
+.custom-wrap h2 { padding-bottom:24px; } 
+.symbols { display: flex; gap:16px;}
+.symbols img { width: 20px; } 
+.symbols [type="radio"] { display: none; } 
+.symbols label { padding:16px; border:1px solid #ddd; border-radius: 8px; } 
+.symbols [type="radio"]:checked+label { border:2px solid #D2202F; } 
+.info-txt { position: relative; } 
+.info-pop { position: absolute; top:24px; left:0; width: 240px; line-height: 24px; font-weight: bold; display: none; font-size: 18px; color:#5B5E63; z-index: 999; background-color: #fff; padding:12px; border-radius: 8px; border:1px solid #ddd; } 
+.info-pop.show { display: block; } 
+.foot-btn { position: absolute; padding:0 16px; bottom:0px; left:0px; display: flex; justify-content: space-between; width: 100%; z-index: 999; } 
+
+
+/*========================================================
+CUSTOM WEDGEWORKS - CHARACTER STAMPING
+========================================================*/ 
+.btn-open-stamping { display: flex; justify-content: space-between; width: 60%; background: #FFFFFF; border: 1px solid #DDDDDD; box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08); border-radius: 8px; font-size: 20px; color:#272A2D; } 
+#popup-stamping .custom-rdo-field label { justify-content:space-between; width: 100%; padding:16px; text-align: left; } 
