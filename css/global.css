@@ -46,28 +46,6 @@ select::-ms-expand { display:none; }
 /*========================================================
  Common
 ========================================================*/
-.blind { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); border:0 } 
-.hide { display:none !important; } 
-.v-hidden { visibility:hidden; } 
-.dis-inb { display:inline-block; } 
-body.lock { overflow: hidden !important; } 
-
-/* Frame ===============================================*/
-.frame-full { position:relative; width:100%; } 
-.frame-max { position:relative; max-width:1920px; margin:0 auto; } 
-.frame-mid { position:relative; max-width:1440px; margin:0 auto; } 
-.frame-min { position:relative; max-width:1200px; margin:0 auto; } 
-.frame-sm { position:relative; max-width:1100px; margin:0 auto; } 
-.frame-wrap,
-.clear:after,
-[class*="frame-"]:after { display:block; clear:both; content:''; } 
-
-/* Float / Position ===============================================*/
-.fl { float:left; } 
-.fr { float:right; } 
-.fn { float:none; } 
-[class*="frame-"] .pos-left { position:absolute; top:0; left:0; } 
-[class*="frame-"] .pos-right { position:absolute; top:0; right:0; } 
 
 /* Title, Text ===============================================*/
 .page-tit { margin-top:100px; padding-bottom:25px; font-family:'NanumSquareNeoExtraBold'; color:#000; font-size:36px; line-height:34px; letter-spacing:-.36px; } 
@@ -93,10 +71,6 @@ body.lock { overflow: hidden !important; }
 .text-center { text-align:center !important; } 
 .text-normal { font-weight:normal !important; } 
 .text-bold { font-weight:bold !important; } 
-
-/* Text(Color) */
-.text-primary { color:#c8102e !important; } 
-.text-highlight { background-color:#00428e !important; color:#fff !important; font-weight:bold !important; } 
 
 /* Text(ellipsis) */
 .text-elps { text-overflow:ellipsis; white-space:nowrap; overflow:hidden; word-break: break-all; } 
@@ -163,50 +137,6 @@ textarea:hover,textarea:focus { border-color:#000; border-radius:0; outline:0; }
 .input-group.sm-basic input { min-height:35px; padding-right:40px; } 
 .input-group.sm-basic .btn { position:absolute; top:0; right:0; bottom:0; } 
 
-
-/* custom : select ---------------------------------------- */
-/* select.form-select { display:inline-block; position:relative; width:100%; min-height:40px; padding:11px 60px 11px 10px; border:1px solid #ccc; box-sizing:border-box; background:#fff url('../images/icon/ico-arr-sm-black-down.svg') no-repeat top 18px right 10px; background-size:14px auto; font-family:"NanumSquareNeoRegular",AppleSDGothicNeo,GoogleSans,Helvetica,"Malgun Gothic","맑은 고딕",sans-serif; color:#000; font-size:16px; font-weight:bold; } */
-.custom-select { display:inline-block; position:relative; min-width:150px; min-height:40px; border:1px solid #ccc; box-sizing:border-box; background:#fff; } /* width:100%; */
-.custom-select a { display:block; height:38px; padding:11px 60px 11px 10px; color:#000; font-size:16px; font-weight:bold; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; word-break: break-all; } /* height:40px; */
-/* .custom-select > a { background:url('../images/icon/ico-arr-sm-black-down.svg') no-repeat top 18px right 10px; background-size:14px auto; } */
-.custom-select > a.on { background:url('../images/icon/ico-arr-sm-black-up.svg') no-repeat top 17px right 10px; background-size:14px auto; } 
-.custom-select > a.on + .select-wrap { border-color:#000; } 
-.custom-select .select-wrap { overflow-y:hidden; position:absolute; right:-1px; left:-1px; max-height:220px; border:1px solid #ccc; background:#fff; z-index:1; } 
-.custom-select .select-list li a { padding:9px 10px 10px; color:#222; } 
-.custom-select .select-list a:hover { background-color:#eee; } 
-
-/* custom : checkbox ----------------------------------------*/
-.input-check { display:block; position:relative; margin:0 10px 5pxc 0; padding:3px 0 2px 32px; font-family:'NanumSquareNeoExtraBold'; color:#000; font-size:15px; cursor:pointer; word-wrap:break-word; word-break:keep-all; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; } 
-.input-check input { position:absolute; top:0px; right:0; left:0px; width:23px; height:22px; min-height:22px; margin:0; cursor:pointer; border:none; } 
-.checkMark { position:absolute; top:0; left:0; width:23px; height:22px; border:2px solid #33353a; border-radius:2px; background-color:#fff; box-sizing:border-box; } 
-/* ie11 */
-_:-ms-fullscreen, :root .checkMark { border:transparent; } 
-
-.input-check:hover input ~ .checkMark { border-color:#33353a; } 
-.input-check input:checked ~ .checkMark { border-color:#33353a; background:#33353a url('../images/icon/ico-check-white.svg')no-repeat center; background-size:13px auto; } 
-.input-check input:disabled ~ .checkMark { border-color:#999; background:#eee; } /* 임시 */
-[class*="input-group"] .input-check { margin:0 10px 9px 0; } 
-
-/* custom : radio ---------------------------------------- */
-.input-radio { display:block; position:relative; padding:3px 0 2px 31px; margin:0 40px 0 0; font-family:'NanumSquareNeoExtraBold'; color:#000; font-size:16px; line-height:18px; cursor:pointer; word-wrap:break-word; word-break:keep-all; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; } /* margin:0 40px 5px 0; */
-/* ie11 */
-_:-ms-fullscreen, :root .input-radio { padding:2px 0 7px 31px; } 
-
-.input-radio.fl,
-.input-radio.fr { margin-bottom:0; } 
-.input-radio input { position:absolute; top:0px; right:0; left:0px; width:23px; height:23px; min-height:23px; margin:0; cursor:pointer; border-radius:50%; } 
-.radioMark { position:absolute; top:0px; left:0; width:23px; height:23px; border:2px solid #33353a; border-radius:50%; background-color:#fff; box-sizing:border-box; } 
-.radioMark:after { content:''; display:none; position:absolute; } 
-.input-radio .radioMark:after { width:100%; height:100%; border-radius:50%; } 
-.input-radio:hover input ~ .radioMark { border-color:#33353a } 
-.input-radio:hover input:disabled ~ .radioMark { border-color:#999 } /* 임시 */
-.input-radio input:checked ~ .radioMark { background-color:#33353a; } 
-.input-radio input:checked ~ .radioMark:after { display:block; background:#33353a url('../images/icon/ico-check-white.svg')no-repeat center; background-size:13px auto; } 
-.input-radio input:disabled ~ .radioMark { background:#eee; border-color:#999 } /* 임시 */
-.input-radio input:disabled ~ .radioMark:after { background:#999; } /* 임시 */
-
-/* custom : flatpickr ---------------------------------------- */
-[class*="flatpickr-default"] { background:url('../images/icon/ico-calendar.svg') no-repeat center right 10px; background-size:20px 20px; } 
 
 
 /*========================================================
@@ -502,7 +432,36 @@ body.layer-dim .layer-wrap.layer-index:before { content:none }
 /*========================================================
  Plugin
 ========================================================*/
-
 /* color picker */
 .color-picker-wrap { display: flex; gap:8px; } 
 .colorDisplay { display: inline-block; width: 24px; height: 24px; border-radius: 8px; background-color: #fff; } 
+.color-picker-wrap .colorName { text-align: left; font-size: 16px; } 
+
+.colorDisplay.mix { overflow: hidden; display: flex; } 
+.colorDisplay.mix .half-color { width: 50%; height: 100%; } 
+.colorDisplay.mix .half-color.color1 { background-color: #FFFFFF; } 
+.colorDisplay.mix .half-color.color2 {  background-color: #000000; } 
+
+
+/*=====================================================
+Checkbox
+=======================================================*/
+.custom-chk-area input[type=checkbox]{
+    display: none;
+}
+.custom-chk-area input[type=checkbox]+label::before{
+    content: "";
+    display: block;
+    float: left;  
+    margin-top:-3px;
+    margin-right: 4px;
+    width: 24px ;
+    height: 24px;
+    background-image: url('../images/ico-checkbox-off.svg');
+}
+.custom-chk-area input[type=checkbox]:checked+label::before{
+    background-image: url('../images/ico-checkbox-on.svg');
+}
+.custom-chk-area input[type=checkbox]:disabled+label{
+    opacity: 0.3;
+}

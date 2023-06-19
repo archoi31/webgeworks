@@ -46,13 +46,21 @@
   padding: 0;
 }
 
-.co-color-list .color-pallet li {
+.co-color-list .color-pallet li  {
   border: 1px solid #ddd;
   display: inline-block;
   cursor: pointer;
   width: 48px;
   height: 48px;
   border-radius: 8px;
+}
+.co-color-list .color-pallet.mix li {
+  display: flex;
+  overflow: hidden;
+}
+.co-color-list .color-pallet.mix li .half-color {
+  width: 50%;
+  height: 100%;
 }
 
 .co-color-list ul.color-reset {

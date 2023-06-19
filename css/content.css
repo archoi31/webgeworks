@@ -55,9 +55,87 @@ CUSTOM WEDGEWORKS - COMMON
 .info-pop.show { display: block; } 
 .foot-btn { position: absolute; padding:0 16px; bottom:0px; left:0px; display: flex; justify-content: space-between; width: 100%; z-index: 999; } 
 
+/*choose option rdo*/
+.choose-option { display: flex; gap:16px; flex-wrap: wrap;}
+.choose-option img { margin-bottom: 8px;  height: 90px; width: auto;}
+.choose-option [type="radio"] { display: none; } 
+.choose-option label { display: flex; flex-direction: column; justify-content: center; align-items: center; padding:16px; border:1px solid #ddd; border-radius: 8px;} 
+.choose-option p { color:#5B5E63} 
+.choose-option .name { font-weight: bold; text-align: center;} 
+.choose-option [type="radio"]:checked+label { border:2px solid #D2202F; } 
 
 /*========================================================
 CUSTOM WEDGEWORKS - CHARACTER STAMPING
 ========================================================*/ 
 .btn-open-stamping { display: flex; justify-content: space-between; width: 60%; background: #FFFFFF; border: 1px solid #DDDDDD; box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08); border-radius: 8px; font-size: 20px; color:#272A2D; } 
 #popup-stamping .custom-rdo-field label { justify-content:space-between; width: 100%; padding:16px; text-align: left; } 
+
+/*========================================================
+CUSTOM WEDGEWORKS - COLOR OPTIONS
+========================================================*/ 
+.color-option-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+}
+.color-option-list .option{
+    display: flex;
+    flex-direction: column;
+}
+.color-option-list .img-box{
+    padding:24px;
+    background-color:#F6F6F9;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/*========================================================
+CUSTOM WEDGEWORKS - TOE ENGRAVING
+========================================================*/ 
+.mix-color-pallet { display: flex; gap:16px; flex-wrap: wrap;}
+.mix-color-pallet [type="radio"] { display: none; } 
+.mix-color-pallet label { display: flex; position: relative; overflow: hidden; width: 48px; height: 48px; border:1px solid #ddd; border-radius: 8px;} 
+.mix-color-pallet label .half-color{ width: 24px; height: 48px; } 
+.mix-color-pallet [type="radio"]:checked+label { border:2px solid #D2202F; } 
+.mix-color-pallet [type="radio"]:checked+label::after { content: "";  display: inline-block; background: url('../images/ico-check-complete.svg'); width: 24px; height: 24px; position: absolute; top:50%;left:50%;transform: translate(-50%,-50%);} 
+
+/*========================================================
+CUSTOM WEDGEWORKS - HAND GROUND
+========================================================*/ 
+.hand-ground-chk{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:32px;
+}
+.hand-ground-chk .img-box{
+    margin-top:12px;
+    padding: 16px;;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+.hand-ground-chk .img-box img{
+    width: auto;
+}
+.hand-ground-chk label p{
+    display: flex;
+    justify-content: space-between;
+}
+.hand-ground-chk .custom-chk-area{
+    position: relative;
+}
+.hand-ground-chk .ico-info{
+    position: absolute;
+    top:0px;
+    right:0;
+}
+.hand-ground-chk .ico-info+input[type=checkbox]:disabled{
+    opacity: .3;
+}
+.hand-ground-chk [type=checkbox]:checked+label p{
+    font-weight: bold;
+}
+
+.hand-ground-chk [type=checkbox]:checked+label .img-box{
+    border:2px solid #D2202F;
+}
