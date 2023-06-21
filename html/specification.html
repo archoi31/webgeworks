@@ -102,31 +102,120 @@
 				<i class="ico- ico-refresh"></i>
 			</button>
 
-			<div class="custom-wrap mb40">
-				<div class="title-flex-sb">
-					<h2>GRIP</h2>
-					<button class="btn btn-open-shaftflex">
-						<p>Select A Grip flex</p>
-						<i class="ico ico-arrow-down"></i>
-					</button>
-				</div>
+			<div class="custom-wrap">
+				<h2>SPECIFICATIONS</h2>
 				
-				<fieldset class="choose-option one-line grip">
-					<input type="radio" id="flat-cap-white1" name="grip" value="flat-cap-white1" checked>
-					<label for="flat-cap-white1">
-						<img src="../images/flat-cap-white1.jpg" alt="flat-cap-white1">
-						<div class="txt-flex-sb">
-							<p class="name">GOLF PRIDE TOUR VELVET 360° WHITE - FLAT CAP</p>
-							<p class="core">Core: .580</p>
-						</div>
+				<fieldset class="custom-rdo-field spec-rdo">
+					<h3 class="spec-title">LOFT</h3>
+
+					<input type="radio" name="loft" value="1° Strong (45°)" id="strong45"  />
+					<label for="strong45">
+						<i class="ico- ico-check-complete"></i>
+						1° Strong (45°)
 					</label>
-					<input type="radio" id="flat-cap-white-wings-1" name="grip" value="flat-cap-white-wings-1">
-					<label for="flat-cap-white-wings-1">
-						<img src="../images/flat-cap-white-wings-1.jpg" alt="flat-cap-white-wings-1">
-						<div class="txt-flex-sb">
-							<p class="name">VOKEY TOUR VELVET 360° FLAT CAP - WHITE</p>
-							<p class="core">Core: .580</p>
-						</div>
+				  
+					<input type="radio" name="loft" value="Standard(46°)" id="stdloft"  checked/>
+					<label for="stdloft">
+						<i class="ico- ico-check-complete"></i>
+						Standard(46°)
+					</label>
+				  
+					<input type="radio" name="loft" value="1° Strong (47°)" id="strong47"  />
+					<label for="strong47">
+						<i class="ico- ico-check-complete"></i>
+						1° Strong (47°)
+					</label>
+				</fieldset>
+
+				<fieldset class="custom-rdo-field spec-rdo">
+					<h3 class="spec-title">LIE ANGLE</h3>
+
+					<input type="radio" name="lie-angle" value="2° Flat" id="flat2"/>
+					<label for="flat2">
+						<i class="ico- ico-check-complete"></i>
+						2° Flat
+					</label>
+				  
+					<input type="radio" name="lie-angle" value="1.5° Flat" id="flat1.5"/>
+					<label for="flat1.5">
+						<i class="ico- ico-check-complete"></i>
+						1.5° Flat
+					</label>
+
+					<input type="radio" name="lie-angle" value="1° Flat" id="flat2"/>
+					<label for="flat1">
+						<i class="ico- ico-check-complete"></i>
+						1° Flat
+					</label>
+					
+					<input type="radio" name="lie-angle" value="0.5° Flat" id="flat0.5"/>
+					<label for="flat0.5">
+						<i class="ico- ico-check-complete"></i>
+						0.5° Flat
+					</label>
+					
+					<input type="radio" name="lie-angle" value="Standard" id="std-lie" checked/>
+					<label for="std-lie">
+						<i class="ico- ico-check-complete"></i>
+						Standard
+					</label>
+
+					<input type="radio" name="lie-angle" value="0.5° Up" id="up0.5"/>
+					<label for="up0.5">
+						<i class="ico- ico-check-complete"></i>
+						0.5° Up
+					</label>
+
+					<input type="radio" name="lie-angle" value="1° Up" id="up1" checked/>
+					<label for="up1">
+						<i class="ico- ico-check-complete"></i>
+						1° Up
+					</label>
+					
+					<input type="radio" name="lie-angle" value="1.5° Up" id="up1.5" checked/>
+					<label for="up1.5">
+						<i class="ico- ico-check-complete"></i>
+						1.5° Up
+					</label>
+					
+					<input type="radio" name="lie-angle" value="2° Up" id="up2" checked/>
+					<label for="up2">
+						<i class="ico- ico-check-complete"></i>
+						2° Up
+					</label>
+				</fieldset>
+
+				<fieldset class="custom-rdo-field spec-rdo">
+					<h3 class="spec-title">LENGTH</h3>
+
+					<input type="radio" name="length" value="+1.00" id="plus1.00"  />
+					<label for="plus1.00">
+						<i class="ico- ico-check-complete"></i>
+						+1.00”
+					</label>
+				  
+					<input type="radio" name="length" value="+0.75" id="plus0.75"  />
+					<label for="plus1.00">
+						<i class="ico- ico-check-complete"></i>
+						+0.75”
+					</label>
+					
+					<input type="radio" name="length" value="+1.00" id="plus1.00"  />
+					<label for="plus1.00">
+						<i class="ico- ico-check-complete"></i>
+						+0.50”
+					</label>
+					
+					<input type="radio" name="length" value="+1.00" id="plus1.00"  />
+					<label for="plus1.00">
+						<i class="ico- ico-check-complete"></i>
+						+0.25”
+					</label>
+				  
+					<input type="radio" name="length" value="1° Strong (47°)" id="StandardLength" checked />
+					<label for="StandardLength">
+						<i class="ico- ico-check-complete"></i>
+						Starndard
 					</label>
 				</fieldset>
 				
@@ -155,88 +244,9 @@
 	<!--// ========== 컨텐츠 영역 :: container ========== -->
 </div><!--// wrap -->
 
-<!-- ========== 팝업 영역 :: shaft-flex style ========== -->
-<div class="layer-wrap" id="popup-shaft-flex" tabindex="0">
-	<div class="layer-pop">
-		<div class="layer-inner layer-sm">
-			<div class="layer-head">
-				<h1 class="layer-title">Grip Size</h1>
-			</div><!--// layer-head  -->
-			<div class="layer-body">
-				<div class="layer-content">
-					<fieldset class="custom-rdo-field">
-						<input type="radio" name="grip-size" value="-1/64" id="minus164" checked />
-						<label for="minus164">
-							<i class="ico- ico-check-complete"></i>
-							-1/64
-						</label>
-					  
-						<input type="radio" name="grip-size" value="R300" id="std"  />
-						<label for="std">
-							<i class="ico- ico-check-complete"></i>
-							Standard
-						</label>
-					  
-						<input type="radio" name="grip-size" value="+1/64" id="plus164"  />
-						<label for="plus164">
-							<i class="ico- ico-check-complete"></i>
-							+1/64
-						</label>
-
-						<input type="radio" name="grip-size" value="+1/32" id="plus132"  />
-						<label for="plus132">
-							<i class="ico- ico-check-complete"></i>
-							+1/32
-						</label>
-
-						<input type="radio" name="grip-size" value="+3/64" id="plus364"  />
-						<label for="plus364">
-							<i class="ico- ico-check-complete"></i>
-							+3/64
-						</label>
-						
-						<input type="radio" name="grip-size" value="+1/16" id="plus116"  />
-						<label for="plus116">
-							<i class="ico- ico-check-complete"></i>
-							+1/16
-						</label>
-					</fieldset>
-				</div><!--// layer-content -->
-			</div><!--// layer-body  -->
-			<div class="layer-footer">
-				<button class="btn btn-pop-close">DONE</button>
-			</div>
-		</div>
-	</div><!--// layer-pop  -->
-</div>
-<!--// ========== 팝업 영역 :: shaft-flex style ========== -->
 
 <!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 <script>
-    $(function () {
-
-		 /* ============================== 팝업 ============================== */
-		 $('.btn-open-shaftflex').click(function(){
-			
-			if ($('#popup-shaft-flex').css('display') == 'block') {
-				$('#popup-shaft-flex').css('display', 'none');
-			} else {
-				$('#popup-shaft-flex').css('display', 'block');
-			}
-		}) 
-
-		//close
-        $('#popup-shaft-flex .btn-pop-close').click(function(){
-			
-			var checkedValue = $('input[name="shaft-flex"]:checked').val();
-			
-			$('#popup-shaft-flex').css('display', 'none');
-
-			$('.btn-open-shaftflex p').text(checkedValue);
-			
-		}) 
-
-   }); 
 </script>
 <!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 </body>

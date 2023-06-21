@@ -78,13 +78,13 @@
 				<li>
 					<a href="./shaft_band.html">SHAFT BAND</a>
 				</li>
-				<li class="current">
+				<li>
 					<a href="./shaft.html">SHAFT</a>
 				</li>
 				<li>
 					<a href="/grip.html">GRIP</a>
 				</li>
-				<li>
+				<li class="current">
 					<a href="./shaft_laser_etching.html">SAFT LASER ETCHING</a>
 				</li>
 				<li>
@@ -102,34 +102,21 @@
 				<i class="ico- ico-refresh"></i>
 			</button>
 
-			<div class="custom-wrap mb40">
-				<div class="title-flex-sb">
-					<h2>GRIP</h2>
-					<button class="btn btn-open-shaftflex">
-						<p>Select A Grip flex</p>
-						<i class="ico ico-arrow-down"></i>
-					</button>
+			<div class="custom-wrap">
+				<h2>SHAFT LASER ETCHING(+ ₩33,000)</h2>
+				<ul>
+					<li class="bullet-txt-import">The WedgeWorks team can etch <b class="txt-primary">up to 20 characters or letters</b> on chrome steel shafts only <Br>(no graphite or black nickel shafts).  </li>
+					<li class="bullet-txt-import">The etching appears silver but cannot be paintfilled.</li>
+				</ul>
+
+				
+				<div class="input-group mt32">
+					<input type="text" placeholder="Please Enter Maximum 20 Characters" class="w60p">
+					<div class="available-charaters">
+						<h3>Characters (may be any of)</h3>
+						<p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z0 1 2 3 4 5 6 7 8 9 0# * @ + $ & - .</p>
+					</div>
 				</div>
-				
-				<fieldset class="choose-option one-line grip">
-					<input type="radio" id="flat-cap-white1" name="grip" value="flat-cap-white1" checked>
-					<label for="flat-cap-white1">
-						<img src="../images/flat-cap-white1.jpg" alt="flat-cap-white1">
-						<div class="txt-flex-sb">
-							<p class="name">GOLF PRIDE TOUR VELVET 360° WHITE - FLAT CAP</p>
-							<p class="core">Core: .580</p>
-						</div>
-					</label>
-					<input type="radio" id="flat-cap-white-wings-1" name="grip" value="flat-cap-white-wings-1">
-					<label for="flat-cap-white-wings-1">
-						<img src="../images/flat-cap-white-wings-1.jpg" alt="flat-cap-white-wings-1">
-						<div class="txt-flex-sb">
-							<p class="name">VOKEY TOUR VELVET 360° FLAT CAP - WHITE</p>
-							<p class="core">Core: .580</p>
-						</div>
-					</label>
-				</fieldset>
-				
 			</div>
 			
 		</article>
@@ -155,88 +142,9 @@
 	<!--// ========== 컨텐츠 영역 :: container ========== -->
 </div><!--// wrap -->
 
-<!-- ========== 팝업 영역 :: shaft-flex style ========== -->
-<div class="layer-wrap" id="popup-shaft-flex" tabindex="0">
-	<div class="layer-pop">
-		<div class="layer-inner layer-sm">
-			<div class="layer-head">
-				<h1 class="layer-title">Grip Size</h1>
-			</div><!--// layer-head  -->
-			<div class="layer-body">
-				<div class="layer-content">
-					<fieldset class="custom-rdo-field">
-						<input type="radio" name="grip-size" value="-1/64" id="minus164" checked />
-						<label for="minus164">
-							<i class="ico- ico-check-complete"></i>
-							-1/64
-						</label>
-					  
-						<input type="radio" name="grip-size" value="R300" id="std"  />
-						<label for="std">
-							<i class="ico- ico-check-complete"></i>
-							Standard
-						</label>
-					  
-						<input type="radio" name="grip-size" value="+1/64" id="plus164"  />
-						<label for="plus164">
-							<i class="ico- ico-check-complete"></i>
-							+1/64
-						</label>
-
-						<input type="radio" name="grip-size" value="+1/32" id="plus132"  />
-						<label for="plus132">
-							<i class="ico- ico-check-complete"></i>
-							+1/32
-						</label>
-
-						<input type="radio" name="grip-size" value="+3/64" id="plus364"  />
-						<label for="plus364">
-							<i class="ico- ico-check-complete"></i>
-							+3/64
-						</label>
-						
-						<input type="radio" name="grip-size" value="+1/16" id="plus116"  />
-						<label for="plus116">
-							<i class="ico- ico-check-complete"></i>
-							+1/16
-						</label>
-					</fieldset>
-				</div><!--// layer-content -->
-			</div><!--// layer-body  -->
-			<div class="layer-footer">
-				<button class="btn btn-pop-close">DONE</button>
-			</div>
-		</div>
-	</div><!--// layer-pop  -->
-</div>
-<!--// ========== 팝업 영역 :: shaft-flex style ========== -->
 
 <!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 <script>
-    $(function () {
-
-		 /* ============================== 팝업 ============================== */
-		 $('.btn-open-shaftflex').click(function(){
-			
-			if ($('#popup-shaft-flex').css('display') == 'block') {
-				$('#popup-shaft-flex').css('display', 'none');
-			} else {
-				$('#popup-shaft-flex').css('display', 'block');
-			}
-		}) 
-
-		//close
-        $('#popup-shaft-flex .btn-pop-close').click(function(){
-			
-			var checkedValue = $('input[name="shaft-flex"]:checked').val();
-			
-			$('#popup-shaft-flex').css('display', 'none');
-
-			$('.btn-open-shaftflex p').text(checkedValue);
-			
-		}) 
-
-   }); 
 </script>
 <!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 </body>
