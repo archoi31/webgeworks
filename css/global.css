@@ -50,7 +50,7 @@ select::-ms-expand { display:none; }
 /* Title, Text ===============================================*/
 [class*="bullet-txt"][class*="import"]::before { content: '※'; display: inline-block; font-size: 16px; width: 20px; margin-left: -20px; background: none; } 
 [class*="bullet-txt"] { color: #5B5E63; font-size: 18px; line-height: 24px; display: block; margin-bottom: 12px; margin-left: 20px; position: relative; } 
-.txt-primary { color:#D2202F } 
+.txt-primary { color:#D2202F !important} 
 
 /* Text Align,Style ===============================================*/
 .text-left { text-align:left !important; } 
@@ -59,7 +59,13 @@ select::-ms-expand { display:none; }
 .text-normal { font-weight:normal !important; } 
 .text-bold { font-weight:bold !important; } 
 
-
+/* Float Align ===============================================*/
+.float-lt{
+    float: left;   
+}
+.float-rt{
+    float: right;
+}
 /* Icon ===============================================*/
 [class*="ico-"] { display:inline-block; vertical-align:middle; font-style:normal; text-indent:-9999px; } 
 [class*="btn-"] [class*="ico-"] { margin-right:8px; } 
@@ -76,6 +82,8 @@ select::-ms-expand { display:none; }
 .ico-kakao { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-kakao.svg ') no-repeat; background-size:contain; } 
 .ico-login-id { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-login-id.svg ') no-repeat; background-size:contain; } 
 .ico-login-pw { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-login-pw.svg ') no-repeat; background-size:contain; } 
+.ico-move-arrow { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-move-arrow.svg') no-repeat; background-size:contain; } 
+.ico-remove { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-remove.svg') no-repeat; background-size:contain; } 
 
 /* Button ===============================================*/
 .btn { display:inline-flex; justify-content: center; position:relative; padding:16px 20px; border:none; border-radius:8px; background-color:#D2202F; font-weight: bold; font-size:18px; line-height: 24px; color:#fff; } 
@@ -90,6 +98,9 @@ select::-ms-expand { display:none; }
 .btn-lined{background-color: #fff; border:2px solid #D2202F;color:#D2202F}
 .btn-cancel{background-color: #fff; border:2px solid #ddd;color:#5B5E63}
 .btn-ghost{border:none !important; padding:0;}
+.btn-sm-bk{background-color: #272A2D; color:#ffffff; padding:8px 16px;}
+.btn-sm-wt{gap:8px; background-color: #fff; color:#5B5E63;font-weight: 500;padding:8px 16px;border:1px solid #ddd;}
+
 /*========================================================
  Form
 ========================================================*/
@@ -109,7 +120,6 @@ textarea::placeholder { color:#aaaaaa }
 [class*="input-group"][class*="text"] { display:flex; align-items:center; margin-right:10px; width:auto; color:#000; font-size:16px; font-weight:bold; letter-spacing:-.32px; white-space:nowrap; } 
 [class*="input-group"][class*="center"] { justify-content:center; } 
 .input-group > .form-control { position:relative; flex:1 1 auto; width:1%; min-width:0; } 
-.input-group > .label-control { position:relative; flex:1 1 auto; width:1%; min-width:0;} 
 .input-group select,
 .input-group .custom-select { flex:1 } 
 .input-group select ~ select,
@@ -130,6 +140,11 @@ textarea::placeholder { color:#aaaaaa }
 .tab-menu ul > li > a { display:block; position:relative; padding:8px 16px; color:#5B5E63; font-size:20px; font-weight:bold; text-align:center; white-space:nowrap; } 
 .tab-menu ul > li.current > a { background:#D2202F1A; color:#D2202F; border-radius:24px; } 
 
+.chip{display: flex; gap:16px; font-weight: bold;}
+.chip li{padding:8px 16px; background: #EEEEEE;
+    border-radius: 8px;color: #5B5E63;cursor: pointer;}
+.chip li.current{background: #272A2D;;
+    color: #ffffff;}
 
 /*========================================================
  Table
@@ -308,29 +323,6 @@ body.layer-dim .layer-wrap.layer-index:before { content:none }
 .w80p { width:80% !important; } 
 .w90p { width:90% !important; } 
 .w100p { width:100% !important; } 
-
-/* height */
-.h80 { height:80px !important; } 
-.h90 { height:90px !important; } 
-.h100 { height:100px !important; } 
-.h110 { height:110px !important; } 
-.h120 { height:120px !important; } 
-.h150 { height:150px !important; } 
-.h160 { height:160px !important; } 
-.h170 { height:170px !important; } 
-.h180 { height:180px !important; } 
-.h190 { height:190px !important; } 
-.h200 { height:200px !important; } 
-.h300 { height:300px !important; } 
-.h400 { height:400px !important; } 
-.h500 { height:500px !important; } 
-.h600 { height:600px !important; } 
-.h620 { height:620px !important; } 
-
-
-.fl-right{
-    float: right;
-}
 
 
 /*========================================================

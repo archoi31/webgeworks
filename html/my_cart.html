@@ -45,75 +45,60 @@
 	<section id="contents" class="container">
 		
 			
-		<article class="order-history contents-wrap">
-			<h1 class="title32 mt48 mb24">ORDER HISTORY</h1>
-			<div class="tab-menu order-tab mb48">
-				<ul>
-					<li class="current">
-						<a href="#">ORDERED <span class="num">1</span></a> 
-					</li>
-					<li>
-						<a href="#">CUSTOMIZING <span class="num">1</span></a> 
-					</li>
-					<li>
-						<a href="#">SHIPPING <span class="num">1</span></a> 
-					</li>
-					<li>
-						<a href="#">SHIPPED <span class="num">1</span></a> 
-					</li>
-				</ul>
-			</div>
+		<article class="my-cart contents-wrap">
 			
-			<div class="search-wrap">
-				<ul class="chip">
-					<li class="current">6 Month</li>
-					<li>1 Week</li>
-					<li>1 Month</li>
-				</ul>
-	
-				<div class="inp-area">
-					<input type="text" placeholder="Search Product">
-					<button class="btn btn-sm-bk">Search</button>
-				</div>
-
-			</div>
-
+			<h1 class="title32 mt48 mb24">MY CART</h1>
+			
+			<button class="btn btn-sm-wt txt-primary float-rt mb16">Remove <i class="ico- ico-remove"></i> </button>
+			
 			<table class="order-list-tbl">
 				<thead>
 					<tr>
+						<th class="custom-chk-area">
+							<input type="checkbox" id="chkAll" name="cart">
+							<label for="chkAll"></label>
+						</th>
 						<th class="text-left" colspan="2">PRODUCT</th>
-						<th>ORDER DATE</th>
+						<th>PRICE</th>
 						<th>TOTAL PRICE(QTY)</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
+						<td class="custom-chk-area">
+							<input type="checkbox" id="cart1" name="cart">
+							<label for="cart1"></label>
+						</td>
 						<td>
 							<img src="../images/prd-thums-sm.png">
 						</td>
 						<td class="text-left" >
 							<p class="prd-name">Vokey Design SM9 Wedges</p>
 							<p class="item-no">Item No : WV1061</p>
-							<button class="btn btn-sm-wt">Order Details  <i class="ico- ico-move-arrow"></i></button>
+							<button class="btn btn-sm-wt">Product Details  <i class="ico- ico-move-arrow"></i></button>
 						</td>
 						<td>
-							2023.06.29
+							₩248,000
 						</td>
 						<td >
 							<b>₩345,000</b>(1 item)
 						</td>
 					</tr>
 					<tr>
+						<td class="custom-chk-area">
+							<input type="checkbox" id="cart2" name="cart">
+							<label for="cart2"></label>
+						</td>
 						<td>
 							<img src="../images/prd-thums-sm.png">
 						</td>
 						<td class="text-left" >
 							<p class="prd-name">Vokey Design SM9 Wedges</p>
 							<p class="item-no">Item No : WV1061</p>
-							<button class="btn btn-sm-wt">Order Details <i class="ico- ico-move-arrow"></i></button>
+							<button class="btn btn-sm-wt">Product Details <i class="ico- ico-move-arrow"></i></button>
 						</td>
 						<td>
-							2023.06.29
+							₩248,000
 						</td>
 						<td >
 							<b>₩345,000</b>(1 item)
@@ -121,6 +106,15 @@
 					</tr>
 				</tbody>
 			</table>
+			<div class="btn-wrap mt16">
+				<button class="btn btn-kakao">
+					<i class="ico- ico-kakao"></i>
+					SHARE
+				</button>
+				<button class="btn">
+					BUY NOW
+				</button>
+			</div>
 		</article>
 
 
@@ -131,6 +125,10 @@
 
 <!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 <script>
+	/* 체크박스 전체선택,해제 적용*/
+	$(document).on('click','#chkAll',function(){ 
+		$('[name="cart"]:not(:disabled)').not(this).prop('checked', this.checked);
+	});
 </script>
 <!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 </body>
