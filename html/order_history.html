@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 <!-- ======================== FAVICON ======================== -->
 <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
@@ -131,6 +131,18 @@
 
 <!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 <script>
+
+	//order tab
+	$(".order-tab li").click(function() {
+		$(".order-tab li").removeClass("current"); 
+		$(this).addClass("current"); 
+	});
+
+	//order tab
+	$(".chip li").click(function() {
+		$(".chip li").removeClass("current"); 
+		$(this).addClass("current"); 
+	});
 </script>
 <!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 </body>

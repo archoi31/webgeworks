@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 <!-- ======================== FAVICON ======================== -->
 <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
@@ -77,6 +77,7 @@
 							<p class="item-no">Item No : WV1061</p>
 							<button class="btn btn-sm-wt"  onclick="location.href='../html/view_product_details.html'">Product Details  <i class="ico- ico-move-arrow"></i></button>
 						</td>
+	
 						<td>
 							₩248,000
 						</td>
@@ -111,17 +112,84 @@
 					<i class="ico- ico-kakao"></i>
 					SHARE
 				</button>
-				<button class="btn">
+				<button class="btn btn-buy-now">
 					BUY NOW
 				</button>
 			</div>
 		</article>
-
-
-
 	</section>
 	<!--// ========== 컨텐츠 영역 :: container ========== -->
 </div><!--// wrap -->
+
+<!-- ========== 팝업 영역 :: address info ========== -->
+<div class="layer-wrap" id="popup-address-info" tabindex="0">
+	<div class="layer-pop">
+		<div class="layer-inner layer-sm">
+			<div class="layer-head">
+				<h1 class="layer-title">Address Info</h1>
+			</div><!--// layer-head  -->
+			<div class="layer-body">
+				<div class="layer-content">
+					<div class="input-group mb32">
+						<label class="input-group-label">Name</label>
+						<input type="text" placeholder="Name" class="w100p">
+					</div>
+					<div class="input-group mb32">
+						<label class="input-group-label">Phone</label>
+						<input type="text" placeholder="010-1234-5678" class="w100p">
+					</div>
+					<div class="input-group mb32">
+						<label class="input-group-label">Phone</label>
+							<input type="text" placeholder="Address" class="form-control">
+							<button class="btn btn-gray w100">Search</button>
+						<input type="text" placeholder="Detailed Address" class="w100p">
+					</div>
+					<div class="input-group">
+						<label class="input-group-label">Signature
+							<button class="btn btn-refresh btn-ghost fl-right">Refresh</button>
+						</label>
+						<textarea></textarea>
+					</div>
+					
+				</div><!--// layer-content -->
+			</div><!--// layer-body  -->
+			<div class="layer-footer">
+				<button class="btn btn-cancel btn-pop-close">CANCEL</button>
+				<button class="btn btn-kakao"><i class="ico- ico-kakao"></i>SHARE</button>
+				<button class="btn btn-pop-close w100p">DONE</button>
+			</div>
+		</div>
+	</div><!--// layer-pop  -->
+</div>
+<!--// ========== 팝업 영역 :: address info ========== -->
+
+<!-- ========== 팝업 영역 :: kakao share ========== -->
+<div class="layer-wrap" id="popup-kakao-share" tabindex="0">
+	<div class="layer-pop">
+		<div class="layer-inner layer-sm">
+			<div class="layer-head">
+				<h1 class="layer-title">Share Info</h1>
+			</div><!--// layer-head  -->
+			<div class="layer-body">
+				<div class="layer-content">
+					<div class="input-group mb32">
+						<label class="input-group-label">Name</label>
+						<input type="text" placeholder="Name" class="w100p">
+					</div>
+					<div class="input-group">
+						<label class="input-group-label">Phone</label>
+						<input type="text" placeholder="010-1234-5678" class="w100p">
+					</div>
+				</div><!--// layer-content -->
+			</div><!--// layer-body  -->
+			<div class="layer-footer">
+				<button class="btn btn-cancel btn-pop-close w100p">CANCEL</button>
+				<button class="btn btn-kakao  w100p"><i class="ico- ico-kakao"></i>SHARE</button>
+			</div>
+		</div>
+	</div><!--// layer-pop  -->
+</div>
+<!--// ========== 팝업 영역 :: kakao share ========== -->
 
 <!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 <script>
@@ -129,6 +197,38 @@
 	$(document).on('click','#chkAll',function(){ 
 		$('[name="cart"]:not(:disabled)').not(this).prop('checked', this.checked);
 	});
+
+	//buy now popup open
+	$('.btn-buy-now').click(function(){
+			
+			if ($('#popup-address-info').css('display') == 'block') {
+				$('#popup-address-info').css('display', 'none');
+			} else {
+				$('#popup-address-info').css('display', 'block');
+			}
+		}) 
+
+		//buy now popup close
+        $('#popup-address-info .btn-pop-close').click(function(){
+			$('#popup-address-info').css('display', 'none');
+
+		}) 
+
+		//kakao share popup open
+		$('.btn-kakao').click(function(){
+			
+			if ($('#popup-kakao-share').css('display') == 'block') {
+				$('#popup-kakao-share').css('display', 'none');
+			} else {
+				$('#popup-kakao-share').css('display', 'block');
+			}
+		}) 
+
+		//kakao share popup close
+        $('#popup-kakao-share .btn-pop-close').click(function(){
+			$('#popup-kakao-share').css('display', 'none');
+
+		}) 
 </script>
 <!-- ======================== 해당페이지에서만 사용되는 CSS / JS ======================== -->
 </body>
