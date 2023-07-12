@@ -62,6 +62,7 @@ select::-ms-expand { display:none; }
 /* Float Align ===============================================*/
 .float-lt { float: left; } 
 .float-rt { float: right; } 
+
 /* Icon ===============================================*/
 [class*="ico-"] { display:inline-block; vertical-align:middle; font-style:normal; text-indent:-9999px; } 
 [class*="btn-"] [class*="ico-"] { margin-right:8px; } 
@@ -288,16 +289,6 @@ body.layer-dim .layer-wrap.layer-index:before { content:none }
 .w700 { width:700px !important; } 
 .w800 { width:800px !important; } 
 .w900 { width:900px !important; } 
-.w1000 { width:1000px !important; } 
-.w1010 { width:1010px !important; } 
-.w1020 { width:1020px !important; } 
-.w1030 { width:1030px !important; } 
-.w1040 { width:1040px !important; } 
-.w1050 { width:1050px !important; } 
-.w1060 { width:1060px !important; } 
-.w1070 { width:1070px !important; } 
-.w1100 { width:1100px !important; } 
-.w1200 { width:1200px !important; } 
 
 /* width(%) */
 .w5p { width:5% !important; } 
@@ -323,7 +314,7 @@ body.layer-dim .layer-wrap.layer-index:before { content:none }
  Plugin
 ========================================================*/
 /* color picker */
-.color-picker-wrap { display: flex; gap:8px; } 
+.color-picker-wrap { display: flex; gap:8px;  min-width: 190px;} 
 .colorDisplay { display: inline-block; width: 24px; height: 24px; border-radius: 8px; background-color: #fff; } 
 .color-picker-wrap .colorName { text-align: left; font-size: 16px; padding-right: 12px; } 
 

@@ -75,7 +75,8 @@ CUSTOM WEDGEWORKS - COLOR OPTIONS
 ========================================================*/ 
 .color-option-list { display: flex; flex-wrap: wrap; gap:24px; } 
 .color-option-list .option { display: flex; flex-direction: column; } 
-.color-option-list .img-box { padding:24px; background-color:#F6F6F9; border-radius: 8px; margin-bottom: 12px; } 
+.color-option-list .img-box { padding:24px; background-color:#F6F6F9; border-radius: 8px; margin-bottom: 12px;  text-align: center;} 
+.color-option-list .img-box img { width: auto;} 
 
 /*========================================================
 CUSTOM WEDGEWORKS - TOE ENGRAVING
