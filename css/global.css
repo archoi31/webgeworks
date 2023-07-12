@@ -81,6 +81,7 @@ select::-ms-expand { display:none; }
 .ico-login-pw { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-login-pw.svg ') no-repeat; background-size:contain; } 
 .ico-move-arrow { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-move-arrow.svg') no-repeat; background-size:contain; } 
 .ico-remove { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-remove.svg') no-repeat; background-size:contain; } 
+.ico-home { width:28px; height:28px; vertical-align: bottom; background:url('../images/ico-home.svg') no-repeat; background-size:contain; } 
 
 /* Button ===============================================*/
 .btn { display:inline-flex; justify-content: center; position:relative; padding:16px 20px; border:none; border-radius:8px; background-color:#D2202F; font-weight: bold; font-size:18px; line-height: 24px; color:#fff; } 
@@ -88,7 +89,6 @@ select::-ms-expand { display:none; }
 .btn-primary-slant { padding:16px 32px; transform: skew(-20deg); background-color: #D2202F; border-radius: 0px; font-weight: bold; font-size:20px; } 
 .btn-primary-slant p { transform: skew(20deg); } 
 .btn-primary-slant:disabled { opacity: .5; } 
-.btn-refresh { padding:8px 12px; border-radius:8px; border:1px solid #2D7BF0; background-color: #fff; color:#2D7BF0; } 
 .btn-gray { justify-content: space-between; background-color: #ECECF0; color:#272A2D; } 
 .btn-arrow { background-color: #fff; color:#272A2D; box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16); border-radius: 48px; } 
 .btn-kakao { background-color:#F9E000; color: #272A2D; } 
