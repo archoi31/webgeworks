@@ -370,4 +370,4 @@ Checkbox
 
 /*drawpad*/
 
-[class*="drawpad"]{ background-color:#F6F6F9 ; border:0; border-radius: 8px; width: 100%; min-height: 80px;}
+[class*="drawpad"]{ background-color:#F6F6F9 ; border:0; border-radius: 8px; width: 100%; min-height: 120px;}
