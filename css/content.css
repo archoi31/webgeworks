@@ -44,6 +44,7 @@ CUSTOM WEDGEWORKS - COMMON
 .custom-tab { padding:16px; border-bottom: 1px solid #ddd; } 
 
 .custom-wrap { padding-top:24px; padding-bottom:40px; } 
+.custom-wrap:last-child {  padding-bottom:0px; } 
 .custom-wrap h2 { padding-bottom:24px; } 
 .symbols { display: flex; gap:16px; margin-bottom: 8px; } 
 .symbols img { width: 20px; } 

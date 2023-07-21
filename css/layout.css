@@ -16,7 +16,23 @@ header .hd_title span:last-child:after{content:""; margin:0;}
 
 
 /* Layout : Content ---------------------------------------- */
-.cont-wrap { margin:16px 32px; position: relative; height: calc(100vh - 624px); overflow-y: scroll; } 
+.cont-wrap { margin:16px 12px 16px 24px; padding-right: 12px; position: relative; height: calc(100vh - 624px); overflow-y: scroll; } 
 .cont-wrap .btn-refresh { position: absolute; top:0; right:0; } 
 .submit-wrap { display: flex; justify-content: end; align-items: center; gap:16px; position:fixed; bottom:0; width: 100%; padding:8px 16px; background-color: #fff; border-top:1px solid #ddd; box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16); } 
 .submit-wrap .price { font-size: 20px; line-height: 19px; text-transform: uppercase; color: #272A2D; } 
+
+
+.cont-wrap::-webkit-scrollbar {
+    width: 12px;
+  }
+  .cont-wrap::-webkit-scrollbar-thumb {
+    background-color: #eee;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    
+  }
+  .cont-wrap::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
