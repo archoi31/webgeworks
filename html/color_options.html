@@ -33,7 +33,11 @@
 <body>
 <div class="wrap">
 	<!-- ========== 공통 헤더 :: header ========== -->
-	<header class="simple-hdr">
+	<header >
+		<a href="javascript:history.back()">
+			<i class="ico-prev-arrow"></i>
+		</a>
+		<h1 class="hd_title"><span>SM9 48.10 F</span><span>Jet Black Premium</span><span>RH</span></h1>
 		<nav class="gnb">
 			<ul>
 				<li>
@@ -43,7 +47,7 @@
 				</li>
 				<li class="cart">
 					<a href="../html/my_cart.html">
-						<i class="ico- ico-cart"></i><sapn class="number">2</sapn>
+						<i class="ico-cart"></i><sapn class="number">0</sapn>
 					</a>
 				</li>
 			</ul>
@@ -55,11 +59,6 @@
 	<section id="contents" class="container">
 		
 		<div class="area-prd-image">
-			<div class="prd-name">
-				<p>SM9 48.10 F</p>
-				<p>Jet Black</p>
-				<p>RH</p>
-			</div>
 			<img src="../images/jetblack_rh.png">
 		</div>
 
@@ -112,75 +111,203 @@
 						<div class="img-box">
 							<img src="../images/img-loft.png" alt="">
 						</div>
-						<button class="btn btn-gray" id="chooseColor">
-							<div class="color-picker-wrap">
-								<div class="colorDisplay"></div>
-								<input class="colorValue" type="hidden" name="" >
-								<p class="colorName">White Out</p>
-							</div>
-							<i class="ico ico-arrow-down"></i>
-						</button>
+						<fieldset class="color-pallet">
+							<input type="radio" id="loft-bk" name="loft-color" value="BV Black" checked>
+							<label for="loft-bk" style="background-color: #000000;">
+							</label>
+	
+							<input type="radio" id="loft-wt" name="loft-color" value="White Out">
+							<label for="loft-wt" style="background-color: #FFFFFF;">
+							</label>
+		
+							<input type="radio" id="loft-pk" name="loft-color" value="Pink Ribbon">
+							<label for="loft-pk" style="background-color: #f3bcd4;">
+							</label>
+	
+							<input type="radio" id="loft-rd" name="loft-color" value="TVD Red">
+							<label for="loft-rd" style="background-color: #990000;">
+							</label>
+	
+							<input type="radio" id="loft-org" name="loft-color" value="Cowboy Orange">
+							<label for="loft-org" style="background-color: #FF7200;">
+							</label>
+							
+							<input type="radio" id="loft-ylw" name="loft-color" value="Cerveza Yellow">
+							<label for="loft-ylw" style="background-color: #FCE000;">
+							</label>
+							
+							<input type="radio" id="loft-lm" name="loft-color" value="Key Lime">
+							<label for="loft-lm" style="background-color: #5ADD45;">
+							</label>
+							
+							<input type="radio" id="loft-grn" name="loft-color" value="Irish Green">
+							<label for="loft-grn" style="background-color: #00A844;">
+							</label>
+							
+							<input type="radio" id="loft-cbl" name="loft-color" value="Carolina Blue">
+							<label for="loft-cbl" style="background-color: #8bb4e8;">
+							</label>
+							
+							<input type="radio" id="loft-obl" name="loft-color" value="Oceanside Blue">
+							<label for="loft-obl" style="background-color: #0019a8;">
+							</label>
+							
+							<input type="radio" id="loft-pp" name="loft-color" value="Purple Haze">
+							<label for="loft-pp" style="background-color: #4f03a9;">
+							</label>
+						</fieldset>
 					</li>
 					<li class="option">
 						<div class="img-box">
 							<img src="../images/img-bounce.png" alt="">
 						</div>
-						<button class="btn btn-gray" id="chooseColor2">
-							<div class="color-picker-wrap">
-								<div class="colorDisplay"></div>
-								<input class="colorValue" type="hidden" name="" >
-								<p class="colorName">White Out</p>
-							</div>
-							<i class="ico ico-arrow-down"></i>
-						</button>
+						<fieldset class="color-pallet">
+							<input type="radio" id="bounce-bk" name="bounce-color" value="BV Black" checked>
+							<label for="bounce-bk" style="background-color: #000000;">
+	
+							</label>
+	
+							<input type="radio" id="bounce-wt" name="bounce-color" value="White Out">
+							<label for="bounce-wt" style="background-color: #FFFFFF;">
+							</label>
+		
+							<input type="radio" id="bounce-pk" name="bounce-color" value="Pink Ribbon">
+							<label for="bounce-pk" style="background-color: #f3bcd4;">
+							</label>
+	
+							<input type="radio" id="bounce-rd" name="bounce-color" value="TVD Red">
+							<label for="bounce-rd" style="background-color: #990000;">
+							</label>
+	
+							<input type="radio" id="bounce-org" name="bounce-color" value="Cowboy Orange">
+							<label for="bounce-org" style="background-color: #FF7200;">
+							</label>
+							
+							<input type="radio" id="bounce-ylw" name="bounce-color" value="Cerveza Yellow">
+							<label for="bounce-ylw" style="background-color: #FCE000;">
+							</label>
+							
+							<input type="radio" id="bounce-lm" name="bounce-color" value="Key Lime">
+							<label for="bounce-lm" style="background-color: #5ADD45;">
+							</label>
+							
+							<input type="radio" id="bounce-grn" name="bounce-color" value="Irish Green">
+							<label for="bounce-grn" style="background-color: #00A844;">
+							</label>
+							
+							<input type="radio" id="bounce-cbl" name="bounce-color" value="Carolina Blue">
+							<label for="bounce-cbl" style="background-color: #8bb4e8;">
+							</label>
+							
+							<input type="radio" id="bounce-obl" name="bounce-color" value="Oceanside Blue">
+							<label for="bounce-obl" style="background-color: #0019a8;">
+							</label>
+							
+							<input type="radio" id="bounce-pp" name="bounce-color" value="Purple Haze">
+							<label for="bounce-pp" style="background-color: #4f03a9;">
+							</label>
+						</fieldset>
 					</li>
 					<li class="option">
 						<div class="img-box">
 							<img src="../images/img-grind.png" alt="">
 						</div>
-						<button class="btn btn-gray" id="chooseColor3">
-							<div class="color-picker-wrap">
-								<div class="colorDisplay"></div>
-								<input class="colorValue" type="hidden" name="" >
-								<p class="colorName">White Out</p>
-							</div>
-							<i class="ico ico-arrow-down"></i>
-						</button>
+						<fieldset class="color-pallet">
+							<input type="radio" id="grind-bk" name="grind-color" value="BV Black" checked>
+							<label for="grind-bk" style="background-color: #000000;">
+	
+							</label>
+	
+							<input type="radio" id="grind-wt" name="grind-color" value="White Out">
+							<label for="grind-wt" style="background-color: #FFFFFF;">
+							</label>
+		
+							<input type="radio" id="grind-pk" name="grind-color" value="Pink Ribbon">
+							<label for="grind-pk" style="background-color: #f3bcd4;">
+							</label>
+	
+							<input type="radio" id="grind-rd" name="grind-color" value="TVD Red">
+							<label for="grind-rd" style="background-color: #990000;">
+							</label>
+	
+							<input type="radio" id="grind-org" name="grind-color" value="Cowboy Orange">
+							<label for="grind-org" style="background-color: #FF7200;">
+							</label>
+							
+							<input type="radio" id="grind-ylw" name="grind-color" value="Cerveza Yellow">
+							<label for="grind-ylw" style="background-color: #FCE000;">
+							</label>
+							
+							<input type="radio" id="grind-lm" name="grind-color" value="Key Lime">
+							<label for="grind-lm" style="background-color: #5ADD45;">
+							</label>
+							
+							<input type="radio" id="grind-grn" name="grind-color" value="Irish Green">
+							<label for="grind-grn" style="background-color: #00A844;">
+							</label>
+							
+							<input type="radio" id="grind-cbl" name="grind-color" value="Carolina Blue">
+							<label for="grind-cbl" style="background-color: #8bb4e8;">
+							</label>
+							
+							<input type="radio" id="grind-obl" name="grind-color" value="Oceanside Blue">
+							<label for="grind-obl" style="background-color: #0019a8;">
+							</label>
+							
+							<input type="radio" id="grind-pp" name="grind-color" value="Purple Haze">
+							<label for="grind-pp" style="background-color: #4f03a9;">
+							</label>
+						</fieldset>
 					</li>
-				</ul>
-				<ul class="color-option-list mt40">
 					<li class="option">
 						<div class="img-box">
 							<img src="../images/img-bvwing.png" alt="">
 						</div>
-						<button class="btn btn-gray" id="chooseColor4">
-							<div class="color-picker-wrap">
-								<div class="colorDisplay mix">
-									<div class="half-color color1"></div>
-									<div class="half-color color2"></div>
-								</div>
-								<input class="colorValue1" type="hidden" name="" >
-								<input class="colorValue2" type="hidden" name="" >
-								<p class="colorName">White/Black</p>
-							</div>
-							<i class="ico ico-arrow-down"></i>
-						</button>
+						<fieldset class="mix-color-pallet">
+							<input type="radio" id="bk-wt" name="bv-wing-color" value="Black/White" checked>
+							<label for="bk-wt">
+								<div class="half-color" style="background-color: #000000;"></div>
+								<div class="half-color" style="background-color: #FFFFFF;"></div>
+							</label>
+		
+							<input type="radio" id="wt-bk" name="bv-wing-color" value="White/Black">
+							<label for="wt-bk">
+								<div class="half-color" style="background-color: #FFFFFF;"></div>
+								<div class="half-color" style="background-color: #000000;"></div>
+							</label>
+							
+							<input type="radio" id="gd-bk" name="bv-wing-color" value="Gold/Black">
+							<label for="gd-bk">
+								<div class="half-color" style="background-color: #847248;"></div>
+								<div class="half-color" style="background-color: #000000;"></div>
+							</label>
+		
+							<input type="radio" id="wt-wt" name="bv-wing-color" value="White/White">
+							<label for="wt-wt">
+								<div class="half-color" style="background-color: #FFFFFF;"></div>
+								<div class="half-color" style="background-color: #FFFFFF;"></div>
+							</label>
+		
+							<input type="radio" id="bk-bk" name="bv-wing-color" value="Black/Black">
+							<label for="bk-bk">
+								<div class="half-color" style="background-color: #000000;"></div>
+								<div class="half-color" style="background-color: #000000;"></div>
+							</label>
+							
+							<input type="radio" id="sv-bk" name="bv-wing-color" value="Silver/Black">
+							<label for="sv-bk">
+								<div class="half-color" style="background-color: #C0C0C0;"></div>
+								<div class="half-color" style="background-color: #000000;"></div>
+							</label>
+							
+						</fieldset>
 					</li>
 				</ul>
 			</div>
 
 		</article>
 		
-			<div class="foot-btn">
-				<button class="btn btn-arrow">
-					<i class="ico- ico-prev-arrow"></i>
-					Prev
-				</button>
-				<button class="btn btn-arrow">
-					Next
-					<i class="ico- ico-next-arrow"></i>
-				</button>
-			</div>
+			
 		<article class="submit-wrap">
 			<p>Total Price <b class="price">₩239,000</b> </p>
 			<button class="btn">

@@ -36,17 +36,16 @@
 /*========================================================
 CUSTOM WEDGEWORKS - COMMON
 ========================================================*/ 
-.area-prd-image { position: relative; background: #F8F8F9; } 
+.area-prd-image { background: #F8F8F9; text-align: center; } 
 .area-prd-image img { width: 80%; max-width: 800px; } 
-.area-prd-image .prd-name { position: absolute; right:32px; top:80px; width: 200px; text-align: right; font-weight: bold; font-size:32px; color:#D2202F; } 
-.area-prd-image .prd-name p{word-break: keep-all;}
+
 .custom-tab ul { overflow-y: hidden; overflow-x: auto; width: 100%; align-items: start; justify-content: start; -ms-overflow-style: none; scrollbar-width: none; } 
 .custom-tab ul::-webkit-scrollbar { display: none; } 
 .custom-tab { padding:16px 0px 16px 16px; border-bottom: 1px solid #ddd; } 
 
 .custom-wrap { padding-top:24px; padding-bottom:40px; } 
 .custom-wrap h2 { padding-bottom:24px; } 
-.symbols { display: flex; gap:16px; } 
+.symbols { display: flex; gap:16px; margin-bottom: 8px; } 
 .symbols img { width: 20px; } 
 .symbols [type="radio"] { display: none; } 
 .symbols label { padding:16px; border:1px solid #ddd; border-radius: 8px; } 
@@ -54,7 +53,6 @@ CUSTOM WEDGEWORKS - COMMON
 .info-txt { position: relative; padding-left:8px; font-size: 18px; font-weight: 500; color:#5B5E63; line-height: 24px; } 
 .info-pop { position: absolute; top:24px; left:0; width: 300px; line-height: 28px; font-weight: bold; display: none; font-size: 20px; color:#5B5E63; z-index: 999; background-color: #fff; padding:16px; border-radius: 8px; border:1px solid #ddd; } 
 .info-pop.show { display: block; } 
-.foot-btn { position: absolute; padding:0 16px; bottom:0px; left:0px; display: flex; justify-content: space-between; width: 100%; z-index: 999; } 
 
 /*choose option rdo*/
 .choose-option { display: flex; gap:16px; flex-wrap: wrap; } 
@@ -68,27 +66,29 @@ CUSTOM WEDGEWORKS - COMMON
 /*========================================================
 CUSTOM WEDGEWORKS - CHARACTER STAMPING
 ========================================================*/ 
-.btn-open-stamping { display: flex; justify-content: space-between; width: 60%; background: #FFFFFF; border: 1px solid #DDDDDD; box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08); border-radius: 8px; font-size: 20px; color:#272A2D; } 
+.btn-open-stamping { display: flex; justify-content: space-between; width: 100%; background: #FFFFFF; border: 1px solid #DDDDDD; box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08); border-radius: 8px; font-size: 20px; color:#272A2D; } 
 #popup-stamping .custom-rdo-field label { justify-content:space-between; width: 100%; padding:16px; text-align: left; } 
 
 /*========================================================
 CUSTOM WEDGEWORKS - COLOR OPTIONS
 ========================================================*/ 
-.color-option-list { display: flex; flex-wrap: wrap; gap:24px; } 
-.color-option-list .option { display: flex; flex-direction: column; } 
-.color-option-list .img-box { padding:24px; background-color:#F6F6F9; border-radius: 8px; margin-bottom: 12px;  text-align: center;} 
-.color-option-list .img-box img { width: auto; max-width: 100%;} 
+.color-option-list { display: flex; gap:24px; flex-wrap: wrap; } 
+.color-option-list .option { flex-basis: calc(50% - 12px); display: flex; flex-direction: column; align-items: stretch; border: 1px solid #eee; padding: 16px; border-radius: 8px; } 
+.color-option-list .img-box { padding:16px; background-color:#F6F6F9; border-radius: 8px; text-align: center; line-height: 229px; } 
+.color-option-list .img-box img { width: auto; max-width: 100%; vertical-align: middle; } 
 
 /*========================================================
 CUSTOM WEDGEWORKS - TOE ENGRAVING
 ========================================================*/ 
-.mix-color-pallet { display: flex; gap:16px; flex-wrap: wrap; } 
-.mix-color-pallet [type="radio"] { display: none; } 
-.mix-color-pallet label { display: flex; position: relative; overflow: hidden; width: 48px; height: 48px; border:1px solid #ddd; border-radius: 8px; } 
-.mix-color-pallet label .half-color { width: 24px; height: 48px; } 
-.mix-color-pallet [type="radio"]:checked+label { border:2px solid #D2202F; } 
-.mix-color-pallet [type="radio"]:checked+label::after { content: ""; display: inline-block; background: url('../images/ico-check-complete.svg'); width: 24px; height: 24px; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); } 
 
+[class*="color-pallet"] { display: flex; gap:16px; flex-wrap: wrap; margin-top: 16px; } 
+[class*="color-pallet"] [type="radio"] { display: none; } 
+[class*="color-pallet"] label { display: flex; position: relative; overflow: hidden; width: 40px; height: 40px; border:1px solid #ddd; border-radius: 8px; } 
+[class*="color-pallet"] [type="radio"]:checked+label { border:2px solid #D2202F; } 
+[class*="color-pallet"] [type="radio"]:checked+label::after { content: ""; display: inline-block; background: url('../images/ico-check-complete.svg'); background-size:cover; width: 18px; height: 18px; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); } 
+.mix-color-pallet label .half-color { width: 20px; height: 40px; } 
+input+[class*="color-pallet"] {margin-top: 8px;}
+h2+[class*="color-pallet"] {margin-top: 0px;}
 /*========================================================
 CUSTOM WEDGEWORKS - HAND GROUND
 ========================================================*/ 
@@ -128,13 +128,13 @@ CUSTOM WEDGEWORKS - SPECIFICATION,COMMENTS
 .spec-title { width: 100%; margin-top:24px; font-size: 20px; color:#272A2D; } 
 .custom-rdo-field.spec-rdo { margin-bottom: 40px; } 
 .custom-rdo-field.spec-rdo label { padding:16px; font-size: 20px; } 
-.comments-txtarea { height: 300px; } 
+.comments-txtarea,.comments-drawpad { height: 300px; } 
 
 /*========================================================
 CONFIGURATION, LOGIN, ETC
 ========================================================*/ 
 .contents-wrap { padding:16px; } 
-.order-cont .area-prd-image .prd-name { top:32px;} 
+.order-cont .area-prd-image .prd-name { top:32px; } 
 .sub-title { font-size: 20px;; color: #272A2D; font-weight: bold; color: #272A2D; padding-top:24px; padding-bottom:8px; } 
 .btn-wrap { display: flex; justify-content: space-between; margin-top:24px; } 
 .summary-list { border:1px solid #ddd; border-radius: 8px; } 
@@ -166,8 +166,7 @@ table.order-list-tbl .item-no { font-size: 16px; padding-bottom: 16px; }
 .order-history .search-wrap input { padding:8px 16px; margin-right: 8px; margin-top: -4px; font-weight: 500; } 
 .order-history .search-wrap button { font-weight: 500; } 
 .order-history .order-tab { padding-bottom: 16px; border-bottom:1px solid #ddd; } 
-.addr-box { border:1px solid #ddd; border-radius: 8px; padding:12px 16px;
- line-height: 24px; } 
+.addr-box { border:1px solid #ddd; border-radius: 8px; padding:12px 16px; line-height: 24px; } 
 .addr-box h4 { padding-bottom: 8px; } 
 .main-wrap { width: 100%; height: calc(100vh - 72px); background-image: url('../images/bg-main.png'); background-size: cover; } 
 .main-wrap .title32 { text-align: center; padding-top:20vh; color:#fff; line-height: 130%; } 

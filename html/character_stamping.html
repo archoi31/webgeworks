@@ -33,7 +33,11 @@
 <body>
 <div class="wrap">
 	<!-- ========== 공통 헤더 :: header ========== -->
-	<header class="simple-hdr">
+	<header >
+		<a href="javascript:history.back()">
+			<i class="ico-prev-arrow"></i>
+		</a>
+		<h1 class="hd_title"><span>SM9 48.10 F</span><span>Jet Black Premium</span><span>RH</span></h1>
 		<nav class="gnb">
 			<ul>
 				<li>
@@ -55,11 +59,7 @@
 	<section id="contents" class="container">
 		
 		<div class="area-prd-image">
-			<div class="prd-name">
-				<p>SM9 48.10 F</p>
-				<p>Jet Black</p>
-				<p>RH</p>
-			</div>
+			
 			<img src="../images/jetblack_rh.png">
 		</div>
 
@@ -130,27 +130,103 @@
 				
 				<div class="input-group mb24">
 					<label class="input-group-label">First Line</label>
-					<input type="text" placeholder="Please Enter A Characters" class="w60p">
-					<button class="btn btn-gray" id="chooseColor">
-						<div class="color-picker-wrap">
-							<div class="colorDisplay"></div>
-							<input class="colorValue" type="hidden" name="" >
-							<p class="colorName">White Out</p>
-						</div>
-						<i class="ico ico-arrow-down"></i>
-					</button>
+					<input type="text" placeholder="Please Enter A Characters"  class="w100p">
+					<fieldset class="color-pallet">
+						<input type="radio" id="bk" name="character-color" value="BV Black" checked>
+						<label for="bk" style="background-color: #000000;">
+							
+						</label>
+
+						<input type="radio" id="wt" name="character-color" value="White Out">
+						<label for="wt" style="background-color: #FFFFFF;">
+						</label>
+	
+						<input type="radio" id="pk" name="character-color" value="Pink Ribbon">
+						<label for="pk" style="background-color: #f3bcd4;">
+						</label>
+
+						<input type="radio" id="rd" name="character-color" value="TVD Red">
+						<label for="rd" style="background-color: #990000;">
+						</label>
+
+						<input type="radio" id="org" name="character-color" value="Cowboy Orange">
+						<label for="org" style="background-color: #FF7200;">
+						</label>
+						
+						<input type="radio" id="ylw" name="character-color" value="Cerveza Yellow">
+						<label for="ylw" style="background-color: #FCE000;">
+						</label>
+						
+						<input type="radio" id="lm" name="character-color" value="Key Lime">
+						<label for="lm" style="background-color: #5ADD45;">
+						</label>
+						
+						<input type="radio" id="grn" name="character-color" value="Irish Green">
+						<label for="grn" style="background-color: #00A844;">
+						</label>
+						
+						<input type="radio" id="cbl" name="character-color" value="Carolina Blue">
+						<label for="cbl" style="background-color: #8bb4e8;">
+						</label>
+						
+						<input type="radio" id="obl" name="character-color" value="Oceanside Blue">
+						<label for="obl" style="background-color: #0019a8;">
+						</label>
+						
+						<input type="radio" id="pp" name="character-color" value="Purple Haze">
+						<label for="pp" style="background-color: #4f03a9;">
+						</label>
+					</fieldset>
 				</div>
 				<div class="input-group">
 					<label class="input-group-label">Second Line</label>
-					<input type="text" placeholder="Please Enter A Characters" class="w60p">
-					<button class="btn btn-gray" id="chooseColor2">
-						<div class="color-picker-wrap">
-							<div class="colorDisplay"></div>
-							<input class="colorValue" type="hidden" name="" >
-							<p class="colorName">White Out</p>
-						</div>
-						<i class="ico ico-arrow-down"></i>
-					</button>
+					<input type="text" placeholder="Please Enter A Characters" class="w100p">
+					
+					<fieldset class="color-pallet">
+						<input type="radio" id="c2-bk" name="character-color2" value="BV Black" checked>
+						<label for="c2-bk" style="background-color: #000000;">
+						</label>
+
+						<input type="radio" id="c2-wt" name="character-color2" value="White Out">
+						<label for="c2-wt" style="background-color: #FFFFFF;">
+						</label>
+	
+						<input type="radio" id="c2-pk" name="character-color2" value="Pink Ribbon">
+						<label for="c2-pk" style="background-color: #f3bcd4;">
+						</label>
+
+						<input type="radio" id="c2-rd" name="character-color2" value="TVD Red">
+						<label for="c2-rd" style="background-color: #990000;">
+						</label>
+
+						<input type="radio" id="c2-org" name="character-color2" value="Cowboy Orange">
+						<label for="c2-org" style="background-color: #FF7200;">
+						</label>
+						
+						<input type="radio" id="c2-ylw" name="character-color2" value="Cerveza Yellow">
+						<label for="c2-ylw" style="background-color: #FCE000;">
+						</label>
+						
+						<input type="radio" id="c2-lm" name="character-color2" value="Key Lime">
+						<label for="c2-lm" style="background-color: #5ADD45;">
+						</label>
+						
+						<input type="radio" id="c2-grn" name="character-color2" value="Irish Green">
+						<label for="c2-grn" style="background-color: #00A844;">
+						</label>
+						
+						<input type="radio" id="c2-cbl" name="character-color2" value="Carolina Blue">
+						<label for="c2-cbl" style="background-color: #8bb4e8;">
+						</label>
+						
+						<input type="radio" id="c2-obl" name="character-color2" value="Oceanside Blue">
+						<label for="c2-obl" style="background-color: #0019a8;">
+						</label>
+						
+						<input type="radio" id="c2-pp" name="character-color2" value="Purple Haze">
+						<label for="c2-pp" style="background-color: #4f03a9;">
+						</label>
+					</fieldset>
 				</div>
 			</div>
 
@@ -212,29 +288,58 @@
 						<img src="../images/snow-effect/diamond-swatch.png" alt="diamond-swatch">
 					</label>	
 				</fieldset>
-				<button class="btn btn-gray mt16" id="chooseColor3" >
-					<div class="color-picker-wrap">
-						<div class="colorDisplay"></div>
-						<input class="colorValue" type="hidden" name="" >
-						<p class="colorName">White Out</p>
-					</div>
-					<i class="ico ico-arrow-down"></i>
-				</button>
+				<fieldset class="color-pallet">
+					<input type="radio" id="sy-bk" name="symbol-color" value="BV Black" checked>
+					<label for="sy-bk" style="background-color: #000000;">
+						
+					</label>
+
+					<input type="radio" id="sy-wt" name="symbol-color" value="White Out">
+					<label for="sy-wt" style="background-color: #FFFFFF;">
+					</label>
+
+					<input type="radio" id="sy-pk" name="symbol-color" value="Pink Ribbon">
+					<label for="sy-pk" style="background-color: #f3bcd4;">
+					</label>
+
+					<input type="radio" id="sy-rd" name="symbol-color" value="TVD Red">
+					<label for="sy-rd" style="background-color: #990000;">
+					</label>
+
+					<input type="radio" id="sy-org" name="symbol-color" value="Cowboy Orange">
+					<label for="sy-org" style="background-color: #FF7200;">
+					</label>
+					
+					<input type="radio" id="sy-ylw" name="symbol-color" value="Cerveza Yellow">
+					<label for="sy-ylw" style="background-color: #FCE000;">
+					</label>
+					
+					<input type="radio" id="sy-lm" name="symbol-color" value="Key Lime">
+					<label for="sy-lm" style="background-color: #5ADD45;">
+					</label>
+					
+					<input type="radio" id="sy-grn" name="symbol-color" value="Irish Green">
+					<label for="sy-grn" style="background-color: #00A844;">
+					</label>
+					
+					<input type="radio" id="sy-cbl" name="symbol-color" value="Carolina Blue">
+					<label for="sy-cbl" style="background-color: #8bb4e8;">
+					</label>
+					
+					<input type="radio" id="sy-obl" name="symbol-color" value="Oceanside Blue">
+					<label for="sy-obl" style="background-color: #0019a8;">
+					</label>
+					
+					<input type="radio" id="sy-pp" name="symbol-color" value="Purple Haze">
+					<label for="sy-pp" style="background-color: #4f03a9;">
+					</label>
+				</fieldset>
 			</div>
 
 
 		</article>
 		
-			<div class="foot-btn">
-				<button class="btn btn-arrow">
-					<i class="ico- ico-prev-arrow"></i>
-					Prev
-				</button>
-				<button class="btn btn-arrow">
-					Next
-					<i class="ico- ico-next-arrow"></i>
-				</button>
-			</div>
+			
 		<article class="submit-wrap">
 			<p>Total Price <b class="price">₩239,000</b> </p>
 			<button class="btn">

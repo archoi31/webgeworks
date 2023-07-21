@@ -115,18 +115,19 @@ function layerClose (el, btnTarget) {
 
 //Contwrap 높이
 function contWrapHeight(){
+    var headerHeight = $('header').outerHeight(); 
     var prdImageHieght = $('.area-prd-image').outerHeight(); 
     var tabHeight =  $('.custom-tab').outerHeight(); 
     var submitWrapHeight =  $('.submit-wrap').outerHeight(); 
     var windowHeight = window.innerHeight;
 
-    var contWrapHeight = windowHeight - (prdImageHieght + tabHeight + submitWrapHeight) - 32;
+    var contWrapHeight = windowHeight - (headerHeight + prdImageHieght + tabHeight + submitWrapHeight) - 32;
     
-    console.log(prdImageHieght)
-    console.log(tabHeight)
-    console.log(submitWrapHeight)
-    console.log(windowHeight)
-    console.log(contWrapHeight)
+    console.log('prdImageHieght',prdImageHieght)
+    console.log('tabHeight',tabHeight)
+    console.log('submitWrapHeight',submitWrapHeight)
+    console.log('windowHeight',windowHeight)
+    console.log('contWrapHeight',contWrapHeight)
 
     $('.cont-wrap').css("height",contWrapHeight );
 }

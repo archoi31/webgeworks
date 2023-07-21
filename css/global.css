@@ -8,8 +8,8 @@ html { -webkit-text-size-adjust:none; /* Chrome, Safari, newer version of Opera*
  -moz-text-size-adjust:none; /* Firefox */
  -ms-text-size-adjust:none; /* ie */
  -o-text-size-adjust:none; /* old version of opera */ } 
- * { font-family:"Gotham",AppleSDGothicNeo,GoogleSans,Helvetica,"Malgun Gothic","맑은 고딕",sans-serif; } 
-html,body { height:100%; font-family:"Gotham",AppleSDGothicNeo,GoogleSans,Helvetica,"Malgun Gothic","맑은 고딕",sans-serif; color:#272A2D; font-size:16px; font-weight:normal; word-break:keep-all; } 
+ * { font-family:"GothamMedium","GothamBook","GothamBold",sans-serif; } 
+html,body { height:100%; color:#272A2D; font-size:16px; font-weight:normal; word-break:keep-all; } 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; vertical-align:baseline; box-sizing:border-box; -webkit-box-sizing:border-box; -webkit-font-smoothing:antialiased; -moz-box-sizing:border-box; -webkit-tap-highlight-color:transparent; } 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section { display:block; } 
@@ -44,6 +44,41 @@ select::-ms-expand { display:none; }
 
 
 /*========================================================
+ Fonts
+========================================================*/
+/* Gotham(Book, Bold) */
+@font-face{
+    font-family:"GothamBook";
+    src:url("./font/GothamBook.woff2") format("woff2"),
+        url("./font/GothamBook.woff") format("font-woff"),
+        url("./font/GothamBook.ttf") format("truetype"),
+        url("./font/GothamBook.eot#iefix") format("embedded-opentype");
+    src:url("./font/GothamBook.eot");
+    src:url("./font/GothamBook.otf") format("opentype");
+    font-style:normal;
+    font-display:swap;
+    font-weight:400;
+}
+@font-face{
+    font-family:"GothamBold";
+    src:url("./font/Gotham-Bold.woff2") format("woff2"),
+        url("./font/Gotham-Bold.woff") format("font-woff"),
+        url("./font/Gotham-Bold.eot#iefix") format("embedded-opentype");
+    src:url("./font/Gotham-Bold.eot");
+    src:url("./font/Gotham-Bold.otf") format("opentype");
+    font-style:normal;
+    font-display:swap;
+    font-weight: 700;
+}
+@font-face{
+    font-family:"GothamMedium";
+    src:url("./font/gotham-medium.woff2") format("woff2"),
+        url("./font/gotham-medium.woff") format("font-woff");
+    font-style:normal;
+    font-display:swap;
+    font-weight: 500;
+}
+/*========================================================
  Common
 ========================================================*/
 
@@ -70,12 +105,11 @@ select::-ms-expand { display:none; }
 .ico-user { width:24px; height:24px; background:url('../images/ico-user.svg') no-repeat; background-size:contain; } 
 .ico-cart { width:24px; height:24px; background:url('../images/ico-cart.svg') no-repeat; background-size:contain; } 
 .ico-check-complete { width:24px; height:24px; background:url('../images/ico-check-complete.svg') no-repeat; background-size:contain; } 
-.ico-prev { width:32px; height:32px; background:url('../images/ico-prev.svg') no-repeat; background-size:contain; } 
 .ico-arrow-down { width:24px; height:24px; background:url('../images/ico-arrow-down.svg ') no-repeat; background-size:contain; } 
 .ico-refresh { width:24px; height:24px; background:url('../images/ico-refresh.svg ') no-repeat; background-size:contain; } 
 .ico-info { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-info.svg ') no-repeat; background-size:contain; } 
-.ico-prev-arrow { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-prev-arrow.svg ') no-repeat; background-size:contain; } 
-.ico-next-arrow { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-next-arrow.svg ') no-repeat; background-size:contain; } 
+.ico-prev-arrow { width:32px; height:32px; vertical-align: bottom; background:url('../images/ico-prev-arrow.svg ') no-repeat; background-size:contain; } 
+/* .ico-next-arrow { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-next-arrow.svg ') no-repeat; background-size:contain; }  */
 .ico-kakao { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-kakao.svg ') no-repeat; background-size:contain; } 
 .ico-login-id { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-login-id.svg ') no-repeat; background-size:contain; } 
 .ico-login-pw { width:24px; height:24px; vertical-align: bottom; background:url('../images/ico-login-pw.svg ') no-repeat; background-size:contain; } 
@@ -97,6 +131,7 @@ select::-ms-expand { display:none; }
 .btn-ghost { border:none !important; padding:0; } 
 .btn-sm-bk { background-color: #272A2D; color:#ffffff; padding:8px 16px; } 
 .btn-sm-wt { gap:8px; background-color: #fff; color:#5B5E63; font-weight: 500; padding:8px 16px; border:1px solid #ddd; } 
+.btn-refresh { gap:8px; background-color: #fff; color:#2D7BF0; font-weight: 500; border:1px solid #ddd; } 
 
 /*========================================================
  Form
@@ -331,3 +366,8 @@ Checkbox
 .custom-chk-area input[type=checkbox]+label::before { content: ""; display: block; float: left; margin-top:-3px; margin-right: 4px; width: 24px; height: 24px; background-image: url('../images/ico-checkbox-off.svg'); } 
 .custom-chk-area input[type=checkbox]:checked+label::before { background-image: url('../images/ico-checkbox-on.svg'); } 
 .custom-chk-area input[type=checkbox]:disabled+label { opacity: 0.3; } 
+
+
+/*drawpad*/
+
+[class*="drawpad"]{ background-color:#F6F6F9 ; border:0; border-radius: 8px; width: 100%; min-height: 80px;}

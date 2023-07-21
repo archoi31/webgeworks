@@ -10,8 +10,9 @@ header { display:flex; justify-content:space-between; align-items: center; heigh
 .gnb ul { display: flex; gap : 32px; font-weight: bold; align-items: center; } 
 .gnb ul .cart { position: relative; } 
 .gnb ul .cart .number { display: inline-block; position: absolute; top:-8px; right:-8px; width:18px; height:18px; border-radius: 18px; background-color:#D2202F; color:#fff; font-size: 12px; font-weight: bold; line-height: 16px; text-align: center; } 
-header.simple-hdr { position: fixed; border:0; justify-content: flex-end;} 
-header .hd_title { font-size: 20px;; } 
+header .hd_title { font-size: 22px;} 
+header .hd_title span::after{content:"|"; color:#ddd; margin-right: 12px;  margin-left: 12px; font-size: 18px; line-height: 22px; font-weight: 100;} 
+header .hd_title span:last-child:after{content:""; margin:0;} 
 
 
 /* Layout : Content ---------------------------------------- */
