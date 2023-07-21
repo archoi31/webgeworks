@@ -41,7 +41,7 @@ CUSTOM WEDGEWORKS - COMMON
 
 .custom-tab ul { overflow-y: hidden; overflow-x: auto; width: 100%; align-items: start; justify-content: start; -ms-overflow-style: none; scrollbar-width: none; } 
 .custom-tab ul::-webkit-scrollbar { display: none; } 
-.custom-tab { padding:16px 0px 16px 16px; border-bottom: 1px solid #ddd; } 
+.custom-tab { padding:16px; border-bottom: 1px solid #ddd; } 
 
 .custom-wrap { padding-top:24px; padding-bottom:40px; } 
 .custom-wrap h2 { padding-bottom:24px; } 
