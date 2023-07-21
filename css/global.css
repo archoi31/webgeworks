@@ -118,7 +118,7 @@ select::-ms-expand { display:none; }
 .ico-home { width:28px; height:28px; vertical-align: bottom; background:url('../images/ico-home.svg') no-repeat; background-size:contain; } 
 
 /* Button ===============================================*/
-.btn { display:inline-flex; justify-content: center; position:relative; padding:16px 20px; border:none; border-radius:8px; background-color:#D2202F; font-weight: bold; font-size:18px; line-height: 24px; color:#fff; } 
+.btn { display:inline-flex; justify-content: center;align-items: center; position:relative; padding:16px 20px; border:none; border-radius:8px; background-color:#D2202F; font-weight: bold; font-size:18px; line-height: 24px; color:#fff; } 
 
 .btn-primary-slant { padding:16px 32px; transform: skew(-20deg); background-color: #D2202F; border-radius: 0px; font-weight: bold; font-size:20px; } 
 .btn-primary-slant p { transform: skew(20deg); } 
